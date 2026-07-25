@@ -34,7 +34,7 @@ Interested people get added to the pool. The pool is fed from two sources: peopl
 
 Called people also drop off the call list. I didn't write separate code for this. I used the existing status field in a page filter, so only people who haven't been called yet show up. The same person doesn't get called twice.
 
-![Flow of called candidates: trainee list and externally sourced people feed the pool, and the pool leads to an appointment](docs/img/flow.png)
+![Flow of called candidates: trainee list and externally sourced people feed the pool, and the pool leads to an appointment](docs/psychotechnical_called_candidates_flow.png)
 
 ## Numbers
 
