@@ -1,5 +1,12 @@
 # Psychotechnical Renewal Tracker
 
+| | |
+|---|---|
+| **Business impact** | Prioritizes upcoming psychotechnical renewals and prevents duplicate calls through a self-updating contact pool. |
+| **Tools** | Power BI, Power Query, DAX |
+| **Status** | In operational use; manually refreshed; scheduled M365 refresh planned. |
+
+
 **TL;DR:** A Power BI report for a driving school. It tracks when commercial drivers' psychotechnical assessments are due for renewal and turns the ones coming up into a call list. The goal wasn't to discover something new. It was to take work already being done and make it faster, repeatable, and easier to follow.
 
 ## Context
