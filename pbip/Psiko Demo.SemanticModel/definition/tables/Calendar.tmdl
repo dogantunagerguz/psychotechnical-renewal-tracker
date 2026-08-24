@@ -1,0 +1,165 @@
+table Calendar
+	lineageTag: 23880987-7cce-42ed-8b67-aa12b3ce8278
+
+	column Date
+		formatString: Short Date
+		lineageTag: 8b2853ad-90cf-4530-a3ea-3bf88e79c8d8
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: d3c89bd0-bc2f-458a-99ae-721b9c3ebe9a
+			defaultHierarchy: LocalDateTable_66074745-7082-42a5-a504-3a9f7034c9f6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Yıl
+		formatString: 0
+		lineageTag: 7abc1e7e-77b0-402a-8006-08b3648ebbab
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Yıl]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ay No'
+		formatString: 0
+		lineageTag: f4cfa29f-5be1-426a-8744-6b82256c444b
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ay No]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ay
+		lineageTag: 7548734a-f4e4-46ac-b1ee-e7e4f4dead22
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Ay]
+		sortByColumn: 'Ay No'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ay Kısa'
+		lineageTag: eb618050-f72a-4763-8b05-53366fd0d088
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Ay Kısa]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ay Yıl'
+		lineageTag: db62e196-4cfa-4afe-aa9d-a8edea7bcec4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Ay Yıl]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Yıl-Ay (Sıralama)'
+		formatString: 0
+		lineageTag: b9ec11dd-1fea-41bb-9e6a-e6c344fc4c1f
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Yıl-Ay (Sıralama)]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Çeyrek
+		lineageTag: 63fb776b-1311-415e-af76-09422d6cb217
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Çeyrek]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Yıl Çeyrek'
+		lineageTag: 5108f50f-571e-4bec-bb02-5d8e98f5b6b4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Yıl Çeyrek]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hafta Günü No'
+		formatString: 0
+		lineageTag: 0db21357-d1c2-4759-a076-8a5570eb5470
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Hafta Günü No]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hafta Günü'
+		lineageTag: af9ab3bd-62a1-4ea0-b14e-8513efb73e1f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Hafta Günü]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Past/Future
+		lineageTag: 6e00813f-5e9d-41d3-afb0-19a49b27d10d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Past/Future]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is This Month'
+		lineageTag: 6a7d1adb-8fbb-4a5c-b132-bdec449864ba
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Is This Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is This Year'
+		lineageTag: 205e5692-7344-4a0c-ad50-b5a67adee735
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Is This Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Diff from Today'
+		formatString: 0
+		lineageTag: 64cf396a-5615-42cb-b290-3be8d3d4f299
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Month Diff from Today]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendar = calculated
+		mode: import
+		source =
+				
+				VAR _StartDate = DATE(2010, 1, 1)
+				VAR _EndDate   = DATE(2035, 12, 31)
+				RETURN
+				ADDCOLUMNS(
+				    CALENDAR(_StartDate, _EndDate),
+				    "Yıl",                YEAR([Date]),
+				    "Ay No",              MONTH([Date]),
+				    "Ay",                 FORMAT([Date], "MMMM", "en-US"),
+				    "Ay Kısa",            FORMAT([Date], "MMM", "en-US"),
+				    "Ay Yıl",             FORMAT([Date], "MMM yyyy", "en-US"),
+				    "Yıl-Ay (Sıralama)",  YEAR([Date]) * 100 + MONTH([Date]),
+				    "Çeyrek",             "Q" & FORMAT([Date], "Q"),
+				    "Yıl Çeyrek",         FORMAT([Date], "yyyy") & " Q" & FORMAT([Date], "Q"),
+				    "Hafta Günü No",      WEEKDAY([Date], 2),
+				    "Hafta Günü",         FORMAT([Date], "dddd", "en-US"),
+				    "Past/Future",        SWITCH(TRUE(),
+				                              [Date] < TODAY(), "Past",
+				                              [Date] = TODAY(), "Today",
+				                              "Future"),
+				    "Is This Month",      IF(YEAR([Date]) = YEAR(TODAY()) && MONTH([Date]) = MONTH(TODAY()), "Yes", "No"),
+				    "Is This Year",       IF(YEAR([Date]) = YEAR(TODAY()), "Yes", "No"),
+				    "Month Diff from Today", DATEDIFF(TODAY(), [Date], MONTH)
+				)
+
+	annotation PBI_Id = 1ed1233c69744c0498556755b2c93697
+

@@ -1,0 +1,44 @@
+expression 'Psiko 2025 Havuz' =
+		let
+		    Source = Excel.Workbook(File.Contents("C:\Users\dogan\OneDrive\Masaüstü\Power BI Project\mock\BI-Psiko 2025.xlsx"), null, true),
+		    TEMMUZ_Sheet = Source{[Item="TEMMUZ",Kind="Sheet"]}[Data],
+		    #"Promoted Headers" = Table.PromoteHeaders(TEMMUZ_Sheet, [PromoteAllScalars=true]),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"TARİH", type date}})
+		in
+		    #"Changed Type"
+	lineageTag: 7d70b8a4-abdc-4a24-bf6d-c5c359752344
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'Psiko 2026 Havuz' =
+		let
+		    Source = Excel.Workbook(File.Contents("C:\Users\dogan\OneDrive\Masaüstü\Power BI Project\mock\BI-Psiko 2026.xlsx"), null, true),
+		    #"2026_Sheet" = Source{[Item="2026",Kind="Sheet"]}[Data],
+		    #"Promoted Headers" = Table.PromoteHeaders(#"2026_Sheet", [PromoteAllScalars=true]),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"TARİH", type date}})
+		in
+		    #"Changed Type"
+	lineageTag: 775cc3ca-65df-40a3-bbd5-94f21d0e8610
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
+expression 'Psiko İçin' =
+		let
+		    Source = #"Kursiyer Sonuçları",
+		    #"Reordered Columns" = Table.ReorderColumns(Source,{"ADAY NO", "ADI-SOYADI", "ADI", "SOYADI", "SERT.VER.TARİHİ", "P.TEKNİK ALIŞ TARİHİ", "SERTİFİKA", "TELEFON"}),
+		    #"Removed Other Columns" = Table.SelectColumns(#"Reordered Columns",{"ADAY NO", "ADI-SOYADI", "P.TEKNİK ALIŞ TARİHİ", "TELEFON"}),
+		    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"P.TEKNİK ALIŞ TARİHİ", "TARİH"}, {"ADAY NO", "SN"}}),
+		    #"Added Custom" = Table.AddColumn(#"Renamed Columns", "Kaynak", each "Driving School"),
+		    #"Renamed Columns1" = Table.RenameColumns(#"Added Custom",{{"ADI-SOYADI", "ADI"}})
+		in
+		    #"Renamed Columns1"
+	lineageTag: 381b154a-aaef-448b-829a-3bf1a331f2d2
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

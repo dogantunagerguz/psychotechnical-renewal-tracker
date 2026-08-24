@@ -1,0 +1,147 @@
+table '2010-2025 Kursiyer Listesi'
+	lineageTag: 90fb70c0-c3e1-4906-b6e3-97e62a86a18c
+
+	column 'ADAY NO'
+		dataType: string
+		lineageTag: 5ff85896-f7f3-4d15-917a-72042d4fda6f
+		summarizeBy: none
+		sourceColumn: ADAY NO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SERTİFİKA
+		dataType: string
+		lineageTag: ae3f5654-003c-4c7e-8b2e-1cd6f61a7f30
+		summarizeBy: none
+		sourceColumn: SERTİFİKA
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SERTİFİKA SERİ NO'
+		dataType: string
+		lineageTag: c37174da-771c-4429-8c9b-9b4d3c94d16b
+		summarizeBy: none
+		sourceColumn: SERTİFİKA SERİ NO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SERTİFİKA VER.TARİHİ'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: f1484b3e-e3cb-4142-a4ad-e15244e1a9f2
+		summarizeBy: none
+		sourceColumn: SERTİFİKA VER.TARİHİ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column TELEFON
+		dataType: string
+		lineageTag: ccdca7d1-e040-4bf6-8f9c-0355f3916795
+		summarizeBy: none
+		sourceColumn: TELEFON
+
+		annotation SummarizationSetBy = Automatic
+
+	column Çapa =
+			
+			IF(
+			    '2010-2025 Kursiyer Listesi'[SERTİFİKA VER.TARİHİ] < DATE(2021, 6, 30),
+			    DATE(2021, 6, 30),
+			    '2010-2025 Kursiyer Listesi'[SERTİFİKA VER.TARİHİ]
+			)
+		formatString: Short Date
+		lineageTag: ccc13f81-53ff-4ed3-b25b-16f8dd842888
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 9c9ac587-5b87-4873-a3e2-da58d851f770
+			defaultHierarchy: LocalDateTable_f9dd3d7f-4f37-4b52-a325-ef4c1558195c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sıradaki Test' =
+			
+			VAR _Bugun = TODAY()
+			VAR _Capa = '2010-2025 Kursiyer Listesi'[Çapa]
+			VAR _Esik = EDATE(_Bugun, -4)   -- 4 ay öncesine kadar geri bak
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        EDATE(_Capa, 60)  >= _Esik, EDATE(_Capa, 60),
+			        EDATE(_Capa, 120) >= _Esik, EDATE(_Capa, 120),
+			        EDATE(_Capa, 180) >= _Esik, EDATE(_Capa, 180),
+			        EDATE(_Capa, 240) >= _Esik, EDATE(_Capa, 240),
+			        EDATE(_Capa, 300)
+			    )
+		formatString: Short Date
+		lineageTag: 219fba41-d41d-4d03-bda7-f4997129e684
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: a33ce4cc-72cb-4e32-9164-a166057b6f8a
+			defaultHierarchy: LocalDateTable_57219cee-b489-49bc-87ff-0503be51f073.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status =
+			
+			VAR _Diff = DATEDIFF(TODAY(), '2010-2025 Kursiyer Listesi'[Sıradaki Test], MONTH)
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        _Diff < 0 && _Diff >= -3,  "Overdue",
+			        _Diff <= 1 && _Diff >= 0,  "Due now",
+			        _Diff <= 3 && _Diff > 1,   "Upcoming",
+			        "Later"
+			    )
+		lineageTag: 87b44cc7-6081-48e1-8d36-104fd5ed675f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fark Kontrol (Ay)' = DATEDIFF(TODAY(), '2010-2025 Kursiyer Listesi'[Sıradaki Test], MONTH)
+		formatString: 0
+		lineageTag: ac36f8f0-1ed6-4c3e-98ac-1093274fbc09
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Candidate
+		dataType: string
+		lineageTag: a1750294-07f4-45a6-bf2b-3ec340bf3b5d
+		summarizeBy: none
+		sourceColumn: Candidate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'İKİNCİ/DİREK.'
+		dataType: string
+		lineageTag: 009d3703-41ee-4149-b301-24185aa7f6bb
+		summarizeBy: none
+		sourceColumn: İKİNCİ/DİREK.
+
+		annotation SummarizationSetBy = Automatic
+
+	partition '2010-2025 Kursiyer Listesi' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\dogan\OneDrive\Masaüstü\Power BI Project\mock\2010-2025 TARAMA.xlsx"), null, true),
+				    Sayfa1_Sheet = Source{[Item="Sayfa1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sayfa1_Sheet, [PromoteAllScalars=true]),
+				    #"Replaced Value" = Table.ReplaceValue(#"Promoted Headers",null,0,Replacer.ReplaceValue,{"TELEFON"}),
+				    #"Added Conditional Column" = Table.AddColumn(#"Replaced Value", "Sert. Alım Dönemi", each if [SERTİFİKA VER.TARİHİ] <= #date(2021, 6, 30) then "2021 Haziran Öncesi" else if [SERTİFİKA VER.TARİHİ] > #date(2021, 6, 30) then "2021 Haziran Sonrası" else null),
+				    #"Removed Columns" = Table.RemoveColumns(#"Added Conditional Column",{"Sert. Alım Dönemi"}),
+				    #"Sorted Rows" = Table.Sort(#"Removed Columns",{{"SERTİFİKA VER.TARİHİ", Order.Ascending}}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Sorted Rows",{{"SERTİFİKA VER.TARİHİ", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

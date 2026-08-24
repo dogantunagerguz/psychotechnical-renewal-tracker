@@ -1,0 +1,126 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 22,
+        "y": 4
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 16,
+            "y": 109.125
+          },
+          "nodeIndex": "2010-2025 Kursiyer Listesi",
+          "nodeLineageTag": "90fb70c0-c3e1-4906-b6e3-97e62a86a18c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 500.625
+          },
+          "nodeIndex": "Hesaplamalar",
+          "nodeLineageTag": "2965f31d-7537-4de4-a6a9-2ea537adf610",
+          "size": {
+            "height": 72,
+            "width": 234
+          },
+          "zIndex": 3,
+          "expandedHeight": 200
+        },
+        {
+          "location": {
+            "x": 275,
+            "y": 356.125
+          },
+          "nodeIndex": "Kursiyer Sonuçları",
+          "nodeLineageTag": "8aa4ae48-31c4-4137-88ca-181327615932",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 624.5,
+            "y": 277.0625
+          },
+          "nodeIndex": "Psiko+Kurs",
+          "nodeLineageTag": "be81b861-bc23-463c-8e0f-5079dbc720c1",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 689,
+            "y": 39.0625
+          },
+          "nodeIndex": "Psiko Havuz",
+          "nodeLineageTag": "17086e4e-7e37-4aca-a47c-fedfec116c5c",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 973,
+            "y": 226.0625
+          },
+          "nodeIndex": "Serbest-Kurs Sütunu",
+          "nodeLineageTag": "1014037a-1235-4ef8-8fcf-ca0694e7a54b",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1257,
+            "y": 226.0625
+          },
+          "nodeIndex": "Serbest-Psiko Sütunları",
+          "nodeLineageTag": "ff058b58-f682-4248-9a91-04e0ebbb61aa",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 383,
+            "y": 0
+          },
+          "nodeIndex": "Calendar",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

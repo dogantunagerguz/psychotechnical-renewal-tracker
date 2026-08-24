@@ -1,0 +1,6976 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "entity_20102025_kursiyer_listesi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "2010-2025 kursiyer listesi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "2010 2025 kursiyer listesi": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi.aday_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "ConceptualProperty": "ADAY NO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "aday no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aday number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Candidate Number": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi.sertifika": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "ConceptualProperty": "SERTİFİKA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sertifika": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SERTİFİKA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Certificate Type": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Cert. Type": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi.sertifika_seri_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "ConceptualProperty": "SERTİFİKA SERİ NO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sertifika seri no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SERTİFİKA SERİ NO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "sertifika seri number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi.sertifika_ver_tarihi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "ConceptualProperty": "SERTİFİKA VER.TARİHİ"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sertifika ver.tarihi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SERTİFİKA VER.TARİHİ": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Licence Issue Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Licence Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.telefon": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "ConceptualProperty": "TELEFON"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "telefon": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Telephone Number": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi.çapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "ConceptualProperty": "Çapa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "çapa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.çapa.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "VariationSource": "Çapa",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "çapa date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.çapa.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "VariationSource": "Çapa",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "çapa year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "çapa yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.çapa.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "VariationSource": "Çapa",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "çapa quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "çapa qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.çapa.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "VariationSource": "Çapa",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "çapa month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "çapa mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.çapa.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "VariationSource": "Çapa",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "çapa day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.sıradaki_test": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "ConceptualProperty": "Sıradaki Test"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "sıradaki examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sıradaki exam": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sıradaki assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sıradaki investigation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sıradaki analysis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sıradaki quiz": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sıradaki trial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sıradaki check": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sıradaki experiment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sıradaki assay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Predicted Next Assesment": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Next Assessment": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "VariationSource": "Sıradaki Test",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.sıradaki_test.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "VariationSource": "Sıradaki Test",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sıradaki test yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.sıradaki_test.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "VariationSource": "Sıradaki Test",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sıradaki test qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.sıradaki_test.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "VariationSource": "Sıradaki Test",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sıradaki test mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.sıradaki_test.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "VariationSource": "Sıradaki Test",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "entity_20102025_kursiyer_listesi.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "ConceptualProperty": "Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi.fark_kontrol_ay": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "ConceptualProperty": "Fark Kontrol (Ay)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fark kontrol (ay)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fark kontrol": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "calendar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "almanac": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "datebook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "agenda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "schedule": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Licence Issue Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendar.yıl": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Yıl"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "yıl": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Year": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.ay_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Ay No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ay no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ay number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.ay": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Ay"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ay": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Month": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.ay_kısa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Ay Kısa"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ay kısa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.ay_yıl": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Ay Yıl"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ay yıl": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.yılay_sıralama": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Yıl-Ay (Sıralama)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "yıl-ay (sıralama)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yıl-ay": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yıl ay (sıralama)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.çeyrek": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Çeyrek"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "çeyrek": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.yıl_çeyrek": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Yıl Çeyrek"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "yıl çeyrek": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.hafta_günü_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Hafta Günü No"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hafta günü no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hafta günü number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.hafta_günü": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Hafta Günü"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hafta günü": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "hesaplamalar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Hesaplamalar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hesaplamalar": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "hesaplamalar.column": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Hesaplamalar",
+			          "ConceptualProperty": "Column"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pilaster": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pillar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "post": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "support": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stake": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "buttress": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "underpinning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "hesaplamalar.due_1_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Hesaplamalar",
+			          "ConceptualProperty": "Due (+1 Month)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "due (+1 month)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "due": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "hesaplamalar.upcoming_13_months": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Hesaplamalar",
+			          "ConceptualProperty": "Upcoming (1-3 Months)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "upcoming (1-3 months)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "upcoming": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "upcoming (1 3 months)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "hesaplamalar.overdue": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Hesaplamalar",
+			          "ConceptualProperty": "Overdue"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "overdue": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "late": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "tardy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "unpaid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "unsettled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "belated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "outstanding": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kursiyer sonuçları": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları.aday_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "ConceptualProperty": "ADAY NO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "aday no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aday number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları.adi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "ConceptualProperty": "ADI"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "adi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları.soyadi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "ConceptualProperty": "SOYADI"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "soyadi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları.sert_ver_tarihi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "ConceptualProperty": "SERT.VER.TARİHİ"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sert.ver.tarihi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SERT.VER.TARİHİ": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "kursiyer_sonuçları.p_teknik_aliş_tarihi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "ConceptualProperty": "P.TEKNİK ALIŞ TARİHİ"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "p.teknik aliş tarihi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "P.TEKNİK ALIŞ TARİHİ": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "VariationSource": "P.TEKNİK ALIŞ TARİHİ",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "p . teknik aliş tarihi date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "kursiyer_sonuçları.p_teknik_aliş_tarihi.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "VariationSource": "P.TEKNİK ALIŞ TARİHİ",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "p . teknik aliş tarihi year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "p.teknik aliş tarihi year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "kursiyer_sonuçları.p_teknik_aliş_tarihi.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "VariationSource": "P.TEKNİK ALIŞ TARİHİ",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "p . teknik aliş tarihi quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "p.teknik aliş tarihi quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "kursiyer_sonuçları.p_teknik_aliş_tarihi.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "VariationSource": "P.TEKNİK ALIŞ TARİHİ",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "p . teknik aliş tarihi month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "p.teknik aliş tarihi month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "kursiyer_sonuçları.p_teknik_aliş_tarihi.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "VariationSource": "P.TEKNİK ALIŞ TARİHİ",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "p . teknik aliş tarihi day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "p.teknik aliş tarihi day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "kursiyer_sonuçları.sertifika": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "ConceptualProperty": "SERTİFİKA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sertifika": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SERTİFİKA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları.telefon": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "ConceptualProperty": "TELEFON"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "telefon": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları.contact_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "ConceptualProperty": "Contact Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "contact status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "contact category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "contact importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "contact prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "contact prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "contact condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "contact class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "contact grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "contact level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "contact position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "contact rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları.adisoyadi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Kursiyer Sonuçları",
+			          "ConceptualProperty": "ADI-SOYADI"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "adi-soyadi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "adi soyadi": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "psikokur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "psiko+kur": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "psikokur.sn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "ConceptualProperty": "SN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sn": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "psikokur.telefon": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "ConceptualProperty": "TELEFON"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "telefon": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Telephone Number": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "psikokur.tarih": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "ConceptualProperty": "TARİH"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tarih": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TARİH": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Last Assessment Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "psikokur.kaynak": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "ConceptualProperty": "Kaynak"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kaynak": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Source": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "psiko_havuz": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko Havuz"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "psiko havuz": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "psiko_havuz.sn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko Havuz",
+			          "ConceptualProperty": "SN"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sn": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "psiko_havuz.telefon": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko Havuz",
+			          "ConceptualProperty": "TELEFON"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "telefon": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "psiko_havuz.tarih": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko Havuz",
+			          "ConceptualProperty": "TARİH"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tarih": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TARİH": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "psikokur.durum": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "ConceptualProperty": "Durum"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "durum": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Status": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "psikokur.sıradaki_test": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "ConceptualProperty": "Sıradaki Test"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "sıradaki examination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sıradaki exam": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sıradaki assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sıradaki investigation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sıradaki analysis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sıradaki quiz": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sıradaki trial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sıradaki check": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sıradaki experiment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sıradaki assay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "Next Test": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "psikokur.sıradaki_test.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "VariationSource": "Sıradaki Test",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "psikokur.sıradaki_test.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "VariationSource": "Sıradaki Test",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sıradaki test yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "psikokur.sıradaki_test.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "VariationSource": "Sıradaki Test",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sıradaki test qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "psikokur.sıradaki_test.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "VariationSource": "Sıradaki Test",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sıradaki test mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "psikokur.sıradaki_test.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "VariationSource": "Sıradaki Test",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sıradaki test day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "psikokur.gecikmiş_3_ay_sayısı_psiko": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "ConceptualProperty": "Gecikmiş (3 ay) Sayısı (Psiko)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gecikmiş (3 ay) sayısı (psiko)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "gecikmiş (3 ay) sayısı": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Overdue": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "psikokur.şimdi_1_ay_sayısı_psiko": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "ConceptualProperty": "Şimdi (+1 ay) Sayısı (Psiko)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "şimdi (+1 ay) sayısı (psiko)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "şimdi (+1 ay) sayısı": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "Due (+1 Month)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "psikokur.yaklaşan_13_ay_sayısı_psiko": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "ConceptualProperty": "Yaklaşan (1-3 ay) Sayısı (Psiko)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "yaklaşan (1-3 ay) sayısı (psiko)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yaklaşan (1-3 ay) sayısı": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yaklaşan (1 3 ay) sayısı (psiko)": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Upcoming (1-3 Months)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "serbestkurs_sütunu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Serbest-Kurs Sütunu"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "serbest-kurs sütunu": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "serbest kurs sütunu": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "serbest kur sütunu": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        }
+			      ]
+			    },
+			    "serbestkurs_sütunu.serbestkurs_sütunu": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Serbest-Kurs Sütunu",
+			          "ConceptualProperty": "Serbest-Kurs Sütunu"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "serbest-kurs sütunu": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "serbest-kurs sütunu name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "serbest kurs sütunu": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "serbest kur sütunu": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "serbestkurs_sütunu.serbestkurs_sütunu_field": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Serbest-Kurs Sütunu",
+			          "ConceptualProperty": "Serbest-Kurs Sütunu Fields"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "serbest-kurs sütunu field": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu field": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "serbest kurs sütunu field": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "serbest kur sütunu field": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu arena": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "serbest kur sütunu arena": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu turf": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu ground": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu pitch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu park": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest kur sütunu turf": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "serbest kur sütunu ground": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "serbest kur sütunu pitch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "serbest kur sütunu park": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "serbestkurs_sütunu.serbestkurs_sütunu_order": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Serbest-Kurs Sütunu",
+			          "ConceptualProperty": "Serbest-Kurs Sütunu Order"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "serbest-kurs sütunu order": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu order": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "serbest kurs sütunu order": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "serbest kur sütunu order": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "serbest kur sütunu instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "serbest kur sütunu direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "serbest kur sütunu edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu directive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-kur sütunu mandate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "serbestpsiko_sütunları": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Serbest-Psiko Sütunları"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "serbest-psiko sütunları": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "serbestpsiko_sütunları.serbestpsiko_sütunları": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Serbest-Psiko Sütunları",
+			          "ConceptualProperty": "Serbest-Psiko Sütunları"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "serbest-psiko sütunları": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "serbestpsiko_sütunları.serbestpsiko_sütunları_field": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Serbest-Psiko Sütunları",
+			          "ConceptualProperty": "Serbest-Psiko Sütunları Fields"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "serbest-psiko sütunları field": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları field": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları arena": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları arena": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları turf": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları ground": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları pitch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları park": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları turf": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları ground": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları pitch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları park": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "serbestpsiko_sütunları.serbestpsiko_sütunları_order": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Serbest-Psiko Sütunları",
+			          "ConceptualProperty": "Serbest-Psiko Sütunları Order"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "serbest-psiko sütunları order": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları order": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "serbest psiko sütunları edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları directive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "serbest-psiko sütunları mandate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi.candidate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "ConceptualProperty": "Candidate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "candidate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "applicant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "contender": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "entrant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "runner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "nominee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "contestant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "aspirant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi.ikinci_direk_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "2010-2025 Kursiyer Listesi",
+			          "ConceptualProperty": "İKİNCİ/DİREK."
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ikinci/direk.": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "İKİNCİ/DİREK.": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ikinci": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ikinci direk .": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "direk.": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "İKİNCİ": {
+			            "State": "Generated",
+			            "Weight": 0.96029999999999993
+			          }
+			        },
+			        {
+			          "İKİNCİ DİREK .": {
+			            "State": "Generated",
+			            "Weight": 0.96029999999999993
+			          }
+			        },
+			        {
+			          "DİREK.": {
+			            "State": "Generated",
+			            "Weight": 0.96029999999999993
+			          }
+			        }
+			      ]
+			    },
+			    "psikokur.adi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko+Kurs",
+			          "ConceptualProperty": "ADI"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "adi": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Candidate": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "psiko_havuz.adi": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko Havuz",
+			          "ConceptualProperty": "ADI"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "adi": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "psiko_havuz.kaynak": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Psiko Havuz",
+			          "ConceptualProperty": "Kaynak"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "kaynak": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.past_future": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Past/Future"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "past/future": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "past future": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "past/ outlook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "past/ opportunity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "past outlook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "past opportunity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "past/ prospect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "past/ potential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "past/ hope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "past prospect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "past potential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "past hope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "/future": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "future": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.is_this_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Is This Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is this month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "is this mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.is_this_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Is This Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is this year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "is this yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.month_diff_from_today": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Month Diff from Today"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month diff from today": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "diff": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "month diff": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "mth diff from today": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "mth diff": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "psikokur_sıradaki_test_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur.sıradaki_test": {
+			          "Target": {
+			            "Entity": "psikokur.sıradaki_test"
+			          }
+			        },
+			        "psikokur.sıradaki_test.date_hierarchy": {
+			          "Target": {
+			            "Entity": "psikokur.sıradaki_test.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur.sıradaki_test"
+			            },
+			            "Object": {
+			              "Role": "psikokur.sıradaki_test.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sıradaki_tests_have_sıradaki_test_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_p_teknik_aliş_tarihi_date_hierarchy_has_kursiyer_sonuçları_p_teknik_aliş_tarihi_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy"
+			          }
+			        },
+			        "kursiyer_sonuçları.p_teknik_aliş_tarihi.day": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.p_teknik_aliş_tarihi.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.p_teknik_aliş_tarihi.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p___teknik_aliş_tarihi_date_hierarchies_have_p___teknik_aliş_tarihi_days"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_p_teknik_aliş_tarihi_date_hierarchy_has_kursiyer_sonuçları_p_teknik_aliş_tarihi_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy"
+			          }
+			        },
+			        "kursiyer_sonuçları.p_teknik_aliş_tarihi.month": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.p_teknik_aliş_tarihi.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.p_teknik_aliş_tarihi.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p___teknik_aliş_tarihi_date_hierarchies_have_p___teknik_aliş_tarihi_months"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_p_teknik_aliş_tarihi_date_hierarchy_has_kursiyer_sonuçları_p_teknik_aliş_tarihi_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy"
+			          }
+			        },
+			        "kursiyer_sonuçları.p_teknik_aliş_tarihi.quarter": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.p_teknik_aliş_tarihi.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.p_teknik_aliş_tarihi.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p___teknik_aliş_tarihi_date_hierarchies_have_p___teknik_aliş_tarihi_quarters"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_p_teknik_aliş_tarihi_date_hierarchy_has_kursiyer_sonuçları_p_teknik_aliş_tarihi_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy"
+			          }
+			        },
+			        "kursiyer_sonuçları.p_teknik_aliş_tarihi.year": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.p_teknik_aliş_tarihi.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.p_teknik_aliş_tarihi.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p___teknik_aliş_tarihi_date_hierarchies_have_p___teknik_aliş_tarihi_years"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_p_teknik_aliş_tarihi_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları.p_teknik_aliş_tarihi": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.p_teknik_aliş_tarihi"
+			          }
+			        },
+			        "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları.p_teknik_aliş_tarihi"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.p_teknik_aliş_tarihi.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p_teknik_aliş_tarihis_have_p___teknik_aliş_tarihi_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.day": {
+			          "Target": {
+			            "Entity": "calendar.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.month": {
+			          "Target": {
+			            "Entity": "calendar.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.quarter": {
+			          "Target": {
+			            "Entity": "calendar.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.year": {
+			          "Target": {
+			            "Entity": "calendar.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "calendar_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date": {
+			          "Target": {
+			            "Entity": "calendar.date"
+			          }
+			        },
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_sıradaki_test_date_hierarchy_has_entity_20102025_kursiyer_listesi_sıradaki_test_day": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.sıradaki_test.day": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.sıradaki_test.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sıradaki_test_date_hierarchies_have_sıradaki_test_days"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_sıradaki_test_date_hierarchy_has_entity_20102025_kursiyer_listesi_sıradaki_test_month": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.sıradaki_test.month": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.sıradaki_test.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sıradaki_test_date_hierarchies_have_sıradaki_test_months"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_sıradaki_test_date_hierarchy_has_entity_20102025_kursiyer_listesi_sıradaki_test_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.sıradaki_test.quarter": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.sıradaki_test.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sıradaki_test_date_hierarchies_have_sıradaki_test_quarters"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_sıradaki_test_date_hierarchy_has_entity_20102025_kursiyer_listesi_sıradaki_test_year": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.sıradaki_test.year": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.sıradaki_test.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sıradaki_test_date_hierarchies_have_sıradaki_test_years"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_sıradaki_test_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi.sıradaki_test": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi.sıradaki_test"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.sıradaki_test.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sıradaki_tests_have_sıradaki_test_date_hierarchies1"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_çapa_date_hierarchy_has_entity_20102025_kursiyer_listesi_çapa_day": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi.çapa.date_hierarchy": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.çapa.date_hierarchy"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.çapa.day": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.çapa.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi.çapa.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.çapa.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "çapa_date_hierarchies_have_çapa_days"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_çapa_date_hierarchy_has_entity_20102025_kursiyer_listesi_çapa_month": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi.çapa.date_hierarchy": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.çapa.date_hierarchy"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.çapa.month": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.çapa.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi.çapa.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.çapa.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "çapa_date_hierarchies_have_çapa_months"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_çapa_date_hierarchy_has_entity_20102025_kursiyer_listesi_çapa_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi.çapa.date_hierarchy": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.çapa.date_hierarchy"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.çapa.quarter": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.çapa.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi.çapa.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.çapa.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "çapa_date_hierarchies_have_çapa_quarters"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_çapa_date_hierarchy_has_entity_20102025_kursiyer_listesi_çapa_year": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi.çapa.date_hierarchy": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.çapa.date_hierarchy"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.çapa.year": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.çapa.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi.çapa.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.çapa.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "çapa_date_hierarchies_have_çapa_years"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_çapa_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi.çapa": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.çapa"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.çapa.date_hierarchy": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.çapa.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi.çapa"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.çapa.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "çapas_have_çapa_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "psiko_havuz_has_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko Havuz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psiko_havuz": {
+			          "Target": {
+			            "Entity": "psiko_havuz"
+			          }
+			        },
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psiko_havuz"
+			            },
+			            "Object": {
+			              "Role": "calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psiko_havuzzes_have_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "psiko_havuz"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_psiko_havuzzes"
+			        }
+			      ]
+			    },
+			    "psikokur_has_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur": {
+			          "Target": {
+			            "Entity": "psikokur"
+			          }
+			        },
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Object": {
+			              "Role": "calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psikokurs_have_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "psikokur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_psikokurs"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_20102025_kursiyer_listesis"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_kursiyer_sonuçları": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "kursiyer_sonuçları": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_kursiyer_sonuçları"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kursiyer_sonuçları_have_20102025_kursiyer_listesis"
+			        }
+			      ]
+			    },
+			    "calendar_has_month_diff_from_today": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.month_diff_from_today": {
+			          "Target": {
+			            "Entity": "calendar.month_diff_from_today"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.month_diff_from_today"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_month_diff_from_today"
+			        }
+			      ]
+			    },
+			    "calendar_has_is_this_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.is_this_year": {
+			          "Target": {
+			            "Entity": "calendar.is_this_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.is_this_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_is_this_year"
+			        }
+			      ]
+			    },
+			    "calendar_has_is_this_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.is_this_month": {
+			          "Target": {
+			            "Entity": "calendar.is_this_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.is_this_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_is_this_month"
+			        }
+			      ]
+			    },
+			    "calendar_has_past_future": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.past_future": {
+			          "Target": {
+			            "Entity": "calendar.past_future"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.past_future"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_past_future"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Prepositions": [
+			              {
+			                "past": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "calendar.past_future"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_are_past_past_future"
+			        }
+			      ]
+			    },
+			    "psiko_havuz_has_kaynak": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko Havuz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psiko_havuz": {
+			          "Target": {
+			            "Entity": "psiko_havuz"
+			          }
+			        },
+			        "psiko_havuz.kaynak": {
+			          "Target": {
+			            "Entity": "psiko_havuz.kaynak"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psiko_havuz"
+			            },
+			            "Object": {
+			              "Role": "psiko_havuz.kaynak"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psiko_havuzzes_have_kaynaks"
+			        }
+			      ]
+			    },
+			    "psiko_havuz_has_adi": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko Havuz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psiko_havuz": {
+			          "Target": {
+			            "Entity": "psiko_havuz"
+			          }
+			        },
+			        "psiko_havuz.adi": {
+			          "Target": {
+			            "Entity": "psiko_havuz.adi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psiko_havuz"
+			            },
+			            "Object": {
+			              "Role": "psiko_havuz.adi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psiko_havuzzes_have_adis"
+			        }
+			      ]
+			    },
+			    "psikokur_has_adi": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur": {
+			          "Target": {
+			            "Entity": "psikokur"
+			          }
+			        },
+			        "psikokur.adi": {
+			          "Target": {
+			            "Entity": "psikokur.adi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Object": {
+			              "Role": "psikokur.adi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psikokurs_have_adis"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_ikinci_direk_": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.ikinci_direk_": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.ikinci_direk_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.ikinci_direk_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_ikinci_direk_"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_candidate": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.candidate": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.candidate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.candidate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_candidates"
+			        }
+			      ]
+			    },
+			    "serbestpsiko_sütunları_has_serbestpsiko_sütunları": {
+			      "Binding": {
+			        "ConceptualEntity": "Serbest-Psiko Sütunları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "serbestpsiko_sütunları": {
+			          "Target": {
+			            "Entity": "serbestpsiko_sütunları"
+			          }
+			        },
+			        "serbestpsiko_sütunları.serbestpsiko_sütunları": {
+			          "Target": {
+			            "Entity": "serbestpsiko_sütunları.serbestpsiko_sütunları"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "serbestpsiko_sütunları"
+			            },
+			            "Object": {
+			              "Role": "serbestpsiko_sütunları.serbestpsiko_sütunları"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "serbestpsiko_sütunları_have_serbestpsiko_sütunları"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "serbestpsiko_sütunları"
+			            },
+			            "Name": {
+			              "Role": "serbestpsiko_sütunları.serbestpsiko_sütunları"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "serbestpsiko_sütunları_are_names_IDs_of_serbestpsiko_sütunları"
+			        }
+			      ]
+			    },
+			    "serbestkurs_sütunu_has_serbestkurs_sütunu": {
+			      "Binding": {
+			        "ConceptualEntity": "Serbest-Kurs Sütunu"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "serbestkurs_sütunu": {
+			          "Target": {
+			            "Entity": "serbestkurs_sütunu"
+			          }
+			        },
+			        "serbestkurs_sütunu.serbestkurs_sütunu": {
+			          "Target": {
+			            "Entity": "serbestkurs_sütunu.serbestkurs_sütunu"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "serbestkurs_sütunu"
+			            },
+			            "Object": {
+			              "Role": "serbestkurs_sütunu.serbestkurs_sütunu"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "serbestkurs_sütunus_have_serbestkurs_sütunus"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "serbestkurs_sütunu"
+			            },
+			            "Name": {
+			              "Role": "serbestkurs_sütunu.serbestkurs_sütunu"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "serbestkurs_sütunus_are_names_IDs_of_serbestkurs_sütunus"
+			        }
+			      ]
+			    },
+			    "psikokur_has_yaklaşan_13_ay_sayısı_psiko": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur": {
+			          "Target": {
+			            "Entity": "psikokur"
+			          }
+			        },
+			        "psikokur.yaklaşan_13_ay_sayısı_psiko": {
+			          "Target": {
+			            "Entity": "psikokur.yaklaşan_13_ay_sayısı_psiko"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Object": {
+			              "Role": "psikokur.yaklaşan_13_ay_sayısı_psiko"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psikokurs_have_yaklaşan_13_ay_sayısı_psiko"
+			        }
+			      ]
+			    },
+			    "psikokur_has_şimdi_1_ay_sayısı_psiko": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur": {
+			          "Target": {
+			            "Entity": "psikokur"
+			          }
+			        },
+			        "psikokur.şimdi_1_ay_sayısı_psiko": {
+			          "Target": {
+			            "Entity": "psikokur.şimdi_1_ay_sayısı_psiko"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Object": {
+			              "Role": "psikokur.şimdi_1_ay_sayısı_psiko"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psikokurs_have_şimdi_1_ay_sayısı_psiko"
+			        }
+			      ]
+			    },
+			    "psikokur_has_gecikmiş_3_ay_sayısı_psiko": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur": {
+			          "Target": {
+			            "Entity": "psikokur"
+			          }
+			        },
+			        "psikokur.gecikmiş_3_ay_sayısı_psiko": {
+			          "Target": {
+			            "Entity": "psikokur.gecikmiş_3_ay_sayısı_psiko"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Object": {
+			              "Role": "psikokur.gecikmiş_3_ay_sayısı_psiko"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psikokurs_have_gecikmiş_3_ay_sayısı_psiko"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Adjectives": [
+			              {
+			                "Overdue": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "psikokur.gecikmiş_3_ay_sayısı_psiko"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "gecikmiş_3_ay_sayısı_psiko_indicates_how_Overdue_psikokurs_are"
+			        }
+			      ]
+			    },
+			    "psikokur_has_sıradaki_test": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur": {
+			          "Target": {
+			            "Entity": "psikokur"
+			          }
+			        },
+			        "psikokur.sıradaki_test": {
+			          "Target": {
+			            "Entity": "psikokur.sıradaki_test"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Object": {
+			              "Role": "psikokur.sıradaki_test"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psikokurs_have_sıradaki_tests"
+			        }
+			      ]
+			    },
+			    "psikokur_has_durum": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur": {
+			          "Target": {
+			            "Entity": "psikokur"
+			          }
+			        },
+			        "psikokur.durum": {
+			          "Target": {
+			            "Entity": "psikokur.durum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Object": {
+			              "Role": "psikokur.durum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psikokurs_have_durum"
+			        }
+			      ]
+			    },
+			    "psiko_havuz_has_tarih": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko Havuz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psiko_havuz": {
+			          "Target": {
+			            "Entity": "psiko_havuz"
+			          }
+			        },
+			        "psiko_havuz.tarih": {
+			          "Target": {
+			            "Entity": "psiko_havuz.tarih"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psiko_havuz"
+			            },
+			            "Object": {
+			              "Role": "psiko_havuz.tarih"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psiko_havuzzes_have_tarihs"
+			        }
+			      ]
+			    },
+			    "psiko_havuz_has_telefon": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko Havuz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psiko_havuz": {
+			          "Target": {
+			            "Entity": "psiko_havuz"
+			          }
+			        },
+			        "psiko_havuz.telefon": {
+			          "Target": {
+			            "Entity": "psiko_havuz.telefon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psiko_havuz"
+			            },
+			            "Object": {
+			              "Role": "psiko_havuz.telefon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psiko_havuzzes_have_telefons"
+			        }
+			      ]
+			    },
+			    "psiko_havuz_has_sn": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko Havuz"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psiko_havuz": {
+			          "Target": {
+			            "Entity": "psiko_havuz"
+			          }
+			        },
+			        "psiko_havuz.sn": {
+			          "Target": {
+			            "Entity": "psiko_havuz.sn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psiko_havuz"
+			            },
+			            "Object": {
+			              "Role": "psiko_havuz.sn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psiko_havuzzes_have_sns"
+			        }
+			      ]
+			    },
+			    "psikokur_has_kaynak": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur": {
+			          "Target": {
+			            "Entity": "psikokur"
+			          }
+			        },
+			        "psikokur.kaynak": {
+			          "Target": {
+			            "Entity": "psikokur.kaynak"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Object": {
+			              "Role": "psikokur.kaynak"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psikokurs_have_kaynaks"
+			        }
+			      ]
+			    },
+			    "psikokur_has_tarih": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur": {
+			          "Target": {
+			            "Entity": "psikokur"
+			          }
+			        },
+			        "psikokur.tarih": {
+			          "Target": {
+			            "Entity": "psikokur.tarih"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Object": {
+			              "Role": "psikokur.tarih"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psikokurs_have_tarihs"
+			        }
+			      ]
+			    },
+			    "psikokur_has_telefon": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur": {
+			          "Target": {
+			            "Entity": "psikokur"
+			          }
+			        },
+			        "psikokur.telefon": {
+			          "Target": {
+			            "Entity": "psikokur.telefon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Object": {
+			              "Role": "psikokur.telefon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psikokurs_have_telefons"
+			        }
+			      ]
+			    },
+			    "psikokur_has_sn": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur": {
+			          "Target": {
+			            "Entity": "psikokur"
+			          }
+			        },
+			        "psikokur.sn": {
+			          "Target": {
+			            "Entity": "psikokur.sn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur"
+			            },
+			            "Object": {
+			              "Role": "psikokur.sn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "psikokurs_have_sns"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_has_adisoyadi": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları"
+			          }
+			        },
+			        "kursiyer_sonuçları.adisoyadi": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.adisoyadi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.adisoyadi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kursiyer_sonuçları_have_adisoyadis"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_has_contact_status": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları"
+			          }
+			        },
+			        "kursiyer_sonuçları.contact_status": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.contact_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.contact_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kursiyer_sonuçları_have_contact_statuses"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_has_telefon": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları"
+			          }
+			        },
+			        "kursiyer_sonuçları.telefon": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.telefon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.telefon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kursiyer_sonuçları_have_telefons"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_has_sertifika": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları"
+			          }
+			        },
+			        "kursiyer_sonuçları.sertifika": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.sertifika"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.sertifika"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kursiyer_sonuçları_have_sertifikas"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_has_p_teknik_aliş_tarihi": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları"
+			          }
+			        },
+			        "kursiyer_sonuçları.p_teknik_aliş_tarihi": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.p_teknik_aliş_tarihi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.p_teknik_aliş_tarihi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kursiyer_sonuçları_have_p_teknik_aliş_tarihis"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_has_sert_ver_tarihi": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları"
+			          }
+			        },
+			        "kursiyer_sonuçları.sert_ver_tarihi": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.sert_ver_tarihi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.sert_ver_tarihi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kursiyer_sonuçları_have_sert_ver_tarihis"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_has_soyadi": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları"
+			          }
+			        },
+			        "kursiyer_sonuçları.soyadi": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.soyadi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.soyadi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kursiyer_sonuçları_have_soyadis"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_has_adi": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları"
+			          }
+			        },
+			        "kursiyer_sonuçları.adi": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.adi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.adi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kursiyer_sonuçları_have_adis"
+			        }
+			      ]
+			    },
+			    "kursiyer_sonuçları_has_aday_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Kursiyer Sonuçları"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "kursiyer_sonuçları": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları"
+			          }
+			        },
+			        "kursiyer_sonuçları.aday_no": {
+			          "Target": {
+			            "Entity": "kursiyer_sonuçları.aday_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "kursiyer_sonuçları"
+			            },
+			            "Object": {
+			              "Role": "kursiyer_sonuçları.aday_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "kursiyer_sonuçları_have_aday_noes"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_hesaplamalar_overdue": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "hesaplamalar.overdue": {
+			          "Target": {
+			            "Entity": "hesaplamalar.overdue"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "hesaplamalar.overdue"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_overdue"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Adjectives": [
+			              {
+			                "overdue": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "hesaplamalar.overdue"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "overdue_indicates_how_overdue_20102025_kursiyer_listesis_are"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_hesaplamalar_upcoming_13_months": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "hesaplamalar.upcoming_13_months": {
+			          "Target": {
+			            "Entity": "hesaplamalar.upcoming_13_months"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "hesaplamalar.upcoming_13_months"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_upcoming_13_months"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_hesaplamalar_due_1_month": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "hesaplamalar.due_1_month": {
+			          "Target": {
+			            "Entity": "hesaplamalar.due_1_month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "hesaplamalar.due_1_month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_due_1_month"
+			        }
+			      ]
+			    },
+			    "hesaplamalar_has_column": {
+			      "Binding": {
+			        "ConceptualEntity": "Hesaplamalar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "hesaplamalar": {
+			          "Target": {
+			            "Entity": "hesaplamalar"
+			          }
+			        },
+			        "hesaplamalar.column": {
+			          "Target": {
+			            "Entity": "hesaplamalar.column"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "hesaplamalar"
+			            },
+			            "Object": {
+			              "Role": "hesaplamalar.column"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hesaplamalars_have_columns"
+			        }
+			      ]
+			    },
+			    "calendar_has_hafta_günü": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.hafta_günü": {
+			          "Target": {
+			            "Entity": "calendar.hafta_günü"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.hafta_günü"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_hafta_günü"
+			        }
+			      ]
+			    },
+			    "calendar_has_hafta_günü_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.hafta_günü_no": {
+			          "Target": {
+			            "Entity": "calendar.hafta_günü_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.hafta_günü_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_hafta_günü_noes"
+			        }
+			      ]
+			    },
+			    "calendar_has_yıl_çeyrek": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.yıl_çeyrek": {
+			          "Target": {
+			            "Entity": "calendar.yıl_çeyrek"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.yıl_çeyrek"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_yıl_çeyreks"
+			        }
+			      ]
+			    },
+			    "calendar_has_çeyrek": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.çeyrek": {
+			          "Target": {
+			            "Entity": "calendar.çeyrek"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.çeyrek"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_çeyreks"
+			        }
+			      ]
+			    },
+			    "calendar_has_yılay_sıralama": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.yılay_sıralama": {
+			          "Target": {
+			            "Entity": "calendar.yılay_sıralama"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.yılay_sıralama"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_yılay_sıralama"
+			        }
+			      ]
+			    },
+			    "calendar_has_ay_yıl": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.ay_yıl": {
+			          "Target": {
+			            "Entity": "calendar.ay_yıl"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.ay_yıl"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_ay_yıl"
+			        }
+			      ]
+			    },
+			    "calendar_has_ay_kısa": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.ay_kısa": {
+			          "Target": {
+			            "Entity": "calendar.ay_kısa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.ay_kısa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_ay_kısa"
+			        }
+			      ]
+			    },
+			    "calendar_has_ay": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.ay": {
+			          "Target": {
+			            "Entity": "calendar.ay"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.ay"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_ay"
+			        }
+			      ]
+			    },
+			    "calendar_has_ay_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.ay_no": {
+			          "Target": {
+			            "Entity": "calendar.ay_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.ay_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_ay_no"
+			        }
+			      ]
+			    },
+			    "calendar_has_yıl": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.yıl": {
+			          "Target": {
+			            "Entity": "calendar.yıl"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.yıl"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_yıls"
+			        }
+			      ]
+			    },
+			    "calendar_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.date": {
+			          "Target": {
+			            "Entity": "calendar.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_dates"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_fark_kontrol_ay": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.fark_kontrol_ay": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.fark_kontrol_ay"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.fark_kontrol_ay"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_fark_kontrol_ay"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_status": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.status": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_statuses"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_sıradaki_test": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.sıradaki_test": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.sıradaki_test"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_sıradaki_tests"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_çapa": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.çapa": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.çapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.çapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_çapas"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_telefon": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.telefon": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.telefon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.telefon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_telefons"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_sertifika_ver_tarihi": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.sertifika_ver_tarihi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sertifika_ver_tarihi"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.sertifika_ver_tarihi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_sertifika_ver_tarihis"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_sertifika_seri_no": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.sertifika_seri_no": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sertifika_seri_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.sertifika_seri_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_sertifika_seri_noes"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_has_sertifika": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.sertifika": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sertifika"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            },
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi.sertifika"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing20102025_kursiyer_listesis_have_sertifikas"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_is_Predicted_on_sıradaki_test": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.sıradaki_test": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sıradaki_test"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "entity_20102025_kursiyer_listesi.sıradaki_test"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "Predict": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "Phrasing20102025_kursiyer_listesis_are_Predicted_on_sıradaki_tests"
+			        }
+			      ]
+			    },
+			    "entity_20102025_kursiyer_listesi_is_Licenced_on_sertifika_ver_tarihi": {
+			      "Binding": {
+			        "ConceptualEntity": "2010-2025 Kursiyer Listesi"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity_20102025_kursiyer_listesi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi"
+			          }
+			        },
+			        "entity_20102025_kursiyer_listesi.sertifika_ver_tarihi": {
+			          "Target": {
+			            "Entity": "entity_20102025_kursiyer_listesi.sertifika_ver_tarihi"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "entity_20102025_kursiyer_listesi.sertifika_ver_tarihi"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "Licence": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "entity_20102025_kursiyer_listesi"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "Phrasing20102025_kursiyer_listesis_are_Licenced_on_sertifika_ver_tarihis"
+			        }
+			      ]
+			    },
+			    "psikokur_sıradaki_test_date_hierarchy_has_psikokur_sıradaki_test_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur.sıradaki_test.date_hierarchy": {
+			          "Target": {
+			            "Entity": "psikokur.sıradaki_test.date_hierarchy"
+			          }
+			        },
+			        "psikokur.sıradaki_test.year": {
+			          "Target": {
+			            "Entity": "psikokur.sıradaki_test.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur.sıradaki_test.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "psikokur.sıradaki_test.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sıradaki_test_date_hierarchies_have_sıradaki_test_years1"
+			        }
+			      ]
+			    },
+			    "psikokur_sıradaki_test_date_hierarchy_has_psikokur_sıradaki_test_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur.sıradaki_test.date_hierarchy": {
+			          "Target": {
+			            "Entity": "psikokur.sıradaki_test.date_hierarchy"
+			          }
+			        },
+			        "psikokur.sıradaki_test.quarter": {
+			          "Target": {
+			            "Entity": "psikokur.sıradaki_test.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur.sıradaki_test.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "psikokur.sıradaki_test.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sıradaki_test_date_hierarchies_have_sıradaki_test_quarters1"
+			        }
+			      ]
+			    },
+			    "psikokur_sıradaki_test_date_hierarchy_has_psikokur_sıradaki_test_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur.sıradaki_test.date_hierarchy": {
+			          "Target": {
+			            "Entity": "psikokur.sıradaki_test.date_hierarchy"
+			          }
+			        },
+			        "psikokur.sıradaki_test.month": {
+			          "Target": {
+			            "Entity": "psikokur.sıradaki_test.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur.sıradaki_test.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "psikokur.sıradaki_test.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sıradaki_test_date_hierarchies_have_sıradaki_test_months1"
+			        }
+			      ]
+			    },
+			    "psikokur_sıradaki_test_date_hierarchy_has_psikokur_sıradaki_test_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Psiko+Kurs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "psikokur.sıradaki_test.date_hierarchy": {
+			          "Target": {
+			            "Entity": "psikokur.sıradaki_test.date_hierarchy"
+			          }
+			        },
+			        "psikokur.sıradaki_test.day": {
+			          "Target": {
+			            "Entity": "psikokur.sıradaki_test.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "psikokur.sıradaki_test.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "psikokur.sıradaki_test.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sıradaki_test_date_hierarchies_have_sıradaki_test_days1"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

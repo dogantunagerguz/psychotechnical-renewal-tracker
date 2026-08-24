@@ -1,0 +1,56 @@
+table 'Serbest-Kurs Sütunu'
+	lineageTag: 1014037a-1235-4ef8-8fcf-ca0694e7a54b
+
+	column 'Serbest-Kurs Sütunu'
+		lineageTag: aa367e06-e795-43f7-806c-3fd0b479eaf2
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Serbest-Kurs Sütunu Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Serbest-Kurs Sütunu Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Serbest-Kurs Sütunu Fields'
+		isHidden
+		lineageTag: d4301feb-91ec-4caa-a4c4-29cdb4711e47
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Serbest-Kurs Sütunu Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Serbest-Kurs Sütunu Order'
+		isHidden
+		formatString: 0
+		lineageTag: d54290e3-f81a-4319-b644-795167e1b189
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Serbest-Kurs Sütunu' = calculated
+		mode: import
+		source =
+				{
+				    ("ADAY NO", NAMEOF('2010-2025 Kursiyer Listesi'[ADAY NO]), 0),
+				    ("ADI", NAMEOF('2010-2025 Kursiyer Listesi'[ADI]), 1),
+				    ("SOYADI", NAMEOF('2010-2025 Kursiyer Listesi'[SOYADI]), 2),
+				    ("SERTİFİKA VER.TARİHİ", NAMEOF('2010-2025 Kursiyer Listesi'[SERTİFİKA VER.TARİHİ]), 3),
+				    ("Ay", NAMEOF('Calendar'[Ay]), 4),
+				    ("Yıl", NAMEOF('Calendar'[Yıl]), 5),
+				    ("SERTİFİKA", NAMEOF('2010-2025 Kursiyer Listesi'[SERTİFİKA]), 6),
+				    ("Sıradaki Test", NAMEOF('2010-2025 Kursiyer Listesi'[Sıradaki Test]), 7),
+				    ("Durum", NAMEOF('2010-2025 Kursiyer Listesi'[Status]), 8),
+				    ("Arama Durumu", NAMEOF('Kursiyer Sonuçları'[Contact Status]), 9)
+				}
+
+	annotation PBI_Id = 4477f7e987b04f19a83215bf1770275f
+

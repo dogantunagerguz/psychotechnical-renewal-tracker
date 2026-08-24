@@ -1,0 +1,31 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: tr-TR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["2010-2025 Kursiyer Listesi","Psiko 2025 Havuz","Psiko 2026 Havuz","Psiko Havuz","Kursiyer Sonuçları","Psiko İçin","Psiko+Kurs"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table '2010-2025 Kursiyer Listesi'
+ref table DateTableTemplate_e7a9f831-fc18-4bbb-8cf1-df9ea54a4c96
+ref table Calendar
+ref table Hesaplamalar
+ref table LocalDateTable_f9dd3d7f-4f37-4b52-a325-ef4c1558195c
+ref table LocalDateTable_57219cee-b489-49bc-87ff-0503be51f073
+ref table 'Kursiyer Sonuçları'
+ref table LocalDateTable_26e4c9d7-a4c6-48cd-92c5-9564ba7d1412
+ref table Psiko+Kurs
+ref table 'Psiko Havuz'
+ref table LocalDateTable_aafd79ed-fee4-4a88-9822-607fa0f2414b
+ref table 'Serbest-Kurs Sütunu'
+ref table 'Serbest-Psiko Sütunları'
+ref table LocalDateTable_66074745-7082-42a5-a504-3a9f7034c9f6
+
+ref cultureInfo en-US
+

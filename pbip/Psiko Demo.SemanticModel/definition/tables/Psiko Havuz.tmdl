@@ -1,0 +1,63 @@
+table 'Psiko Havuz'
+	lineageTag: 17086e4e-7e37-4aca-a47c-fedfec116c5c
+
+	column SN
+		dataType: string
+		lineageTag: 06953e96-bd56-4f95-8a96-fb4812e9e81d
+		summarizeBy: none
+		sourceColumn: SN
+
+		annotation SummarizationSetBy = Automatic
+
+	column TELEFON
+		dataType: string
+		lineageTag: c00cbd91-eedb-4e18-a223-2d9e69c71301
+		summarizeBy: none
+		sourceColumn: TELEFON
+
+		annotation SummarizationSetBy = Automatic
+
+	column TARİH
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 92acf4c2-d4ed-4c85-afbe-0e30ae27f6d6
+		summarizeBy: none
+		sourceColumn: TARİH
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ADI
+		dataType: string
+		lineageTag: 9a460530-6a86-4b7f-a8af-7e878541ad28
+		summarizeBy: none
+		sourceColumn: ADI
+
+		annotation SummarizationSetBy = Automatic
+
+	column Kaynak
+		dataType: string
+		lineageTag: 229cc59e-e3f8-4432-9357-cd1060fd2f8f
+		summarizeBy: none
+		sourceColumn: Kaynak
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Psiko Havuz' = m
+		mode: import
+		source =
+				let
+				    Source = #"Psiko 2025 Havuz",
+				    #"Removed Blank Rows" = Table.SelectRows(Source, each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {"", null}))),
+				    #"Appended Query" = Table.Combine({#"Removed Blank Rows", #"Psiko 2026 Havuz"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Appended Query",{{"Customer", "ADI"}}),
+				    #"Added Custom" = Table.AddColumn(#"Renamed Columns", "Kaynak", each "Psychotechnic"),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"TARİH", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

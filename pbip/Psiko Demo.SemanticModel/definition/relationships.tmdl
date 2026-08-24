@@ -1,0 +1,51 @@
+relationship 9c9ac587-5b87-4873-a3e2-da58d851f770
+	joinOnDateBehavior: datePartOnly
+	fromColumn: '2010-2025 Kursiyer Listesi'.Çapa
+	toColumn: LocalDateTable_f9dd3d7f-4f37-4b52-a325-ef4c1558195c.Date
+
+relationship a33ce4cc-72cb-4e32-9164-a166057b6f8a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: '2010-2025 Kursiyer Listesi'.'Sıradaki Test'
+	toColumn: LocalDateTable_57219cee-b489-49bc-87ff-0503be51f073.Date
+
+relationship 10a1b551-a4d8-4b98-a14a-448b209c6370
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Kursiyer Sonuçları'.'P.TEKNİK ALIŞ TARİHİ'
+	toColumn: LocalDateTable_26e4c9d7-a4c6-48cd-92c5-9564ba7d1412.Date
+
+relationship e598bcb3-84da-2c07-a53c-f6eb09a24af3
+	fromColumn: '2010-2025 Kursiyer Listesi'.'ADAY NO'
+	toColumn: 'Kursiyer Sonuçları'.'ADAY NO'
+
+relationship bc38d174-063e-44f8-b873-b42b89370f4e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Psiko+Kurs.'Sıradaki Test'
+	toColumn: LocalDateTable_aafd79ed-fee4-4a88-9822-607fa0f2414b.Date
+
+relationship AutoDetected_cce0887f-3d63-4f4c-9acc-f45643d1f4bb
+	isActive: false
+	fromColumn: Psiko+Kurs.ADI
+	toColumn: 'Psiko Havuz'.ADI
+
+relationship d3c89bd0-bc2f-458a-99ae-721b9c3ebe9a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendar.Date
+	toColumn: LocalDateTable_66074745-7082-42a5-a504-3a9f7034c9f6.Date
+
+relationship b8a31547-cef5-84d4-9f6b-ed32535ad7b7
+	fromColumn: '2010-2025 Kursiyer Listesi'.'SERTİFİKA VER.TARİHİ'
+	toColumn: Calendar.Date
+
+relationship 42f8b52b-a39b-cfe0-d575-6e6eecf122aa
+	isActive: false
+	fromColumn: 'Kursiyer Sonuçları'.'SERT.VER.TARİHİ'
+	toColumn: Calendar.Date
+
+relationship feee12d1-ab84-9ac5-493f-65ed74d2a0f5
+	fromColumn: Psiko+Kurs.TARİH
+	toColumn: Calendar.Date
+
+relationship 6968dec0-f988-3f47-596d-459b19d93b07
+	fromColumn: 'Psiko Havuz'.TARİH
+	toColumn: Calendar.Date
+

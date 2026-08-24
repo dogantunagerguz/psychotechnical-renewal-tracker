@@ -1,0 +1,52 @@
+table 'Serbest-Psiko Sütunları'
+	lineageTag: ff058b58-f682-4248-9a91-04e0ebbb61aa
+
+	column 'Serbest-Psiko Sütunları'
+		lineageTag: 447f94c7-ad83-49dc-87d8-92fd22598c4d
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Serbest-Psiko Sütunları Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Serbest-Psiko Sütunları Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Serbest-Psiko Sütunları Fields'
+		isHidden
+		lineageTag: 92d82a1f-0089-432b-836b-fcafd53a5297
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Serbest-Psiko Sütunları Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Serbest-Psiko Sütunları Order'
+		isHidden
+		formatString: 0
+		lineageTag: c01f6e8b-0b3e-4c26-97db-152557b0b00f
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Serbest-Psiko Sütunları' = calculated
+		mode: import
+		source =
+				{
+				    ("ADI-SOYADI", NAMEOF('Psiko+Kurs'[ADI-SOYADI]), 0),
+				    ("Durum", NAMEOF('Psiko+Kurs'[Durum]), 1),
+				    ("Kaynak", NAMEOF('Psiko+Kurs'[Kaynak]), 2),
+				    ("TARİH", NAMEOF('Psiko+Kurs'[TARİH]), 3),
+				    ("Sıradaki Test", NAMEOF('Psiko+Kurs'[Sıradaki Test]), 4),
+				    ("TELEFON", NAMEOF('Psiko+Kurs'[TELEFON]), 5)
+				}
+
+	annotation PBI_Id = 80ce9598a13d48d3b071ed70c3ddc88f
+

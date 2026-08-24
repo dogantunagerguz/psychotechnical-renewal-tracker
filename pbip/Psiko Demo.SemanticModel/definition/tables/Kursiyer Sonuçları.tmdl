@@ -1,0 +1,110 @@
+table 'Kursiyer Sonuçları'
+	lineageTag: 8aa4ae48-31c4-4137-88ca-181327615932
+
+	column 'ADAY NO'
+		dataType: int64
+		formatString: 0
+		lineageTag: 10545535-94fa-422c-8e57-f8070081b74a
+		summarizeBy: none
+		sourceColumn: ADAY NO
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADI
+		dataType: string
+		lineageTag: 8a7b6499-7c9c-42df-93a8-6e862597d2be
+		summarizeBy: none
+		sourceColumn: ADI
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOYADI
+		dataType: string
+		lineageTag: ab327a07-91c0-4576-b1af-f25b27bd67a8
+		summarizeBy: none
+		sourceColumn: SOYADI
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SERT.VER.TARİHİ'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: d4d295a7-61cc-4f20-af84-a7968773725d
+		summarizeBy: none
+		sourceColumn: SERT.VER.TARİHİ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'P.TEKNİK ALIŞ TARİHİ'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: a1253aef-caef-46bd-8150-93d99e5f8336
+		summarizeBy: none
+		sourceColumn: P.TEKNİK ALIŞ TARİHİ
+
+		variation Variation
+			isDefault
+			relationship: 10a1b551-a4d8-4b98-a14a-448b209c6370
+			defaultHierarchy: LocalDateTable_26e4c9d7-a4c6-48cd-92c5-9564ba7d1412.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column SERTİFİKA
+		dataType: string
+		lineageTag: 886ecf90-ab90-4b13-9308-b5f2b423f5b2
+		summarizeBy: none
+		sourceColumn: SERTİFİKA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TELEFON
+		dataType: string
+		lineageTag: ab969852-9f2e-41a4-8e21-d5e71c59d647
+		summarizeBy: none
+		sourceColumn: TELEFON
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Contact Status' =
+			
+			SWITCH(
+			    TRUE(),
+			    ISBLANK('Kursiyer Sonuçları'[P.TEKNİK ALIŞ TARİHİ]), "Not Called",
+			    'Kursiyer Sonuçları'[P.TEKNİK ALIŞ TARİHİ] = DATE(1968, 1, 1), "Not Interested",
+			    "Interested"
+			)
+		lineageTag: e44d86fa-2fbf-4eea-ab53-ab4495609314
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADI-SOYADI
+		dataType: string
+		lineageTag: 674928b3-6118-4e5d-8b4b-2076dc0a05b7
+		summarizeBy: none
+		sourceColumn: ADI-SOYADI
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Kursiyer Sonuçları' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\dogan\OneDrive\Masaüstü\Power BI Project\mock\22.06.2026-son2507.xlsx"), null, true),
+				    Export_Sheet = Source{[Item="Export",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Export_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ADAY NO", Int64.Type}, {"ADI", type text}, {"SOYADI", type text}, {"SERT.VER.TARİHİ", type date}, {"P.TEKNİK ALIŞ TARİHİ", type any}, {"Ay", type text}, {"Yıl", Int64.Type}, {"SERTİFİKA", type text}, {"TELEFON", type text}, {"Sıradaki Test", type date}, {"Durum", type text}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Changed Type",{"ADAY NO", "ADI", "SOYADI", "SERT.VER.TARİHİ", "P.TEKNİK ALIŞ TARİHİ", "SERTİFİKA", "TELEFON"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Removed Other Columns",{{"P.TEKNİK ALIŞ TARİHİ", type date}}),
+				    #"Inserted Merged Column" = Table.AddColumn(#"Changed Type1", "ADI-SOYADI", each Text.Combine({[ADI], [SOYADI]}, " "), type text)
+				in
+				    #"Inserted Merged Column"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,375 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "13a616fbc320d9cb7292",
+  "position": {
+    "x": 23.049219687875151,
+    "y": 253.54141656662665,
+    "z": 3000,
+    "height": 467.13085234093637,
+    "width": 1236.9747899159665,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "2010-2025 Kursiyer Listesi"
+                    }
+                  },
+                  "Property": "ADAY NO"
+                }
+              },
+              "queryRef": "Sum(2010-2025 Kursiyer Listesi.ADAY NO)",
+              "nativeQueryRef": "Candidate Number",
+              "displayName": "Candidate Number"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "2010-2025 Kursiyer Listesi"
+                    }
+                  },
+                  "Property": "SERTİFİKA VER.TARİHİ"
+                }
+              },
+              "queryRef": "2010-2025 Kursiyer Listesi.SERTİFİKA VER.TARİHİ",
+              "nativeQueryRef": "Licence Issue Date",
+              "displayName": "Licence Issue Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "2010-2025 Kursiyer Listesi"
+                    }
+                  },
+                  "Property": "Candidate"
+                }
+              },
+              "queryRef": "2010-2025 Kursiyer Listesi.Candidate",
+              "nativeQueryRef": "Candidate"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Property": "Ay"
+                }
+              },
+              "queryRef": "Takvim.Ay",
+              "nativeQueryRef": "Month",
+              "displayName": "Month"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Property": "Yıl"
+                }
+              },
+              "queryRef": "Sum(Takvim.Yıl)",
+              "nativeQueryRef": "Year",
+              "displayName": "Year"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "2010-2025 Kursiyer Listesi"
+                    }
+                  },
+                  "Property": "SERTİFİKA"
+                }
+              },
+              "queryRef": "2010-2025 Kursiyer Listesi.SERTİFİKA",
+              "nativeQueryRef": "Certificate Type",
+              "displayName": "Certificate Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "2010-2025 Kursiyer Listesi"
+                    }
+                  },
+                  "Property": "Sıradaki Test"
+                }
+              },
+              "queryRef": "2010-2025 Kursiyer Listesi.Sıradaki Test",
+              "nativeQueryRef": "Predicted Next Assesment",
+              "displayName": "Predicted Next Assesment"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "2010-2025 Kursiyer Listesi"
+                    }
+                  },
+                  "Property": "Status"
+                }
+              },
+              "queryRef": "2010-2025 Kursiyer Listesi.Durum",
+              "nativeQueryRef": "Status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "2010-2025 Kursiyer Listesi"
+                    }
+                  },
+                  "Property": "TELEFON"
+                }
+              },
+              "queryRef": "2010-2025 Kursiyer Listesi.TELEFON",
+              "nativeQueryRef": "Telephone Number",
+              "displayName": "Telephone Number"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c2faf4bf0c71432d1a04",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "2010-2025 Kursiyer Listesi"
+              }
+            },
+            "Property": "TELEFON"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "2",
+              "Entity": "2010-2025 Kursiyer Listesi",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "2"
+                              }
+                            },
+                            "Property": "TELEFON"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'0'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'İPTAL'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "62ccdb94404baec4611b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "2010-2025 Kursiyer Listesi"
+              }
+            },
+            "Property": "SERTİFİKA"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "2",
+              "Entity": "2010-2025 Kursiyer Listesi",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "2"
+                              }
+                            },
+                            "Property": "SERTİFİKA"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'A1'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'A1 Otomatik'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'A2'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'B'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'B Otomatik'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'A'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

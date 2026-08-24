@@ -1,0 +1,122 @@
+table Psiko+Kurs
+	lineageTag: be81b861-bc23-463c-8e0f-5079dbc720c1
+
+	measure 'Gecikmiş (3 ay) Sayısı (Psiko)' = ```
+			CALCULATE( COUNTROWS('Psiko+Kurs'), 
+			'Psiko+Kurs'[Durum] = "Overdue")
+			```
+		formatString: 0
+		lineageTag: 2374a9b7-558e-47b3-b9ca-af9c21439c84
+
+	measure 'Şimdi (+1 ay) Sayısı (Psiko)' = ```
+			CALCULATE( COUNTROWS('Psiko+Kurs'), 
+			'Psiko+Kurs'[Durum] = "Due now")
+			```
+		formatString: 0
+		lineageTag: ac3d5fe6-7fb4-4417-a4d4-7ed7a570ab20
+
+	measure 'Yaklaşan (1-3 ay) Sayısı (Psiko)' = ```
+			CALCULATE( COUNTROWS('Psiko+Kurs'), 
+			'Psiko+Kurs'[Durum] = "Upcoming")
+			```
+		formatString: 0
+		lineageTag: fd5e703a-59de-4b1f-8b3e-29371b7028b1
+
+	column SN
+		dataType: string
+		lineageTag: 72ef1ec6-110d-4010-85d3-5846751db108
+		summarizeBy: none
+		sourceColumn: SN
+
+		annotation SummarizationSetBy = Automatic
+
+	column TELEFON
+		dataType: string
+		lineageTag: 8a4aeec2-b559-4005-8bdb-431df19946b0
+		summarizeBy: none
+		sourceColumn: TELEFON
+
+		annotation SummarizationSetBy = Automatic
+
+	column TARİH
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 95b8f104-8b1a-4674-b5a5-44b24eba2e48
+		summarizeBy: none
+		sourceColumn: TARİH
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Kaynak
+		dataType: string
+		lineageTag: bf941304-277c-48f9-a569-dfc534877c15
+		summarizeBy: none
+		sourceColumn: Kaynak
+
+		annotation SummarizationSetBy = Automatic
+
+	column Durum =
+			
+			VAR _Fark = DATEDIFF(TODAY(), 'Psiko+Kurs'[Sıradaki Test], MONTH)
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        DATE(1968,01,01) = 'Psiko+Kurs'[TARİH], "Not Interested",
+			        'Psiko+Kurs'[TARİH] < DATE(2021,06,30) , "Out of context",
+			        _Fark < 0 && _Fark >=-3,   "Overdue",
+			        _Fark <= 1 && _Fark >= 0,  "Due Now",
+			        _Fark <= 3 && _Fark > 1,  "Upcoming",
+			        "Later"
+			    )
+		lineageTag: 3051e95e-f546-435e-8267-a1b060623c9f
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sıradaki Test' =
+			
+			VAR _Bugun = TODAY()
+			VAR _Capa = 'Psiko+Kurs'[TARİH]
+			VAR _Esik = EDATE(_Bugun, -4)   -- 4 ay öncesine kadar geri bak
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        EDATE(_Capa, 60)  >= _Esik, EDATE(_Capa, 60),
+			        EDATE(_Capa, 120) >= _Esik, EDATE(_Capa, 120),
+			        EDATE(_Capa, 180) >= _Esik, EDATE(_Capa, 180),
+			        EDATE(_Capa, 240) >= _Esik, EDATE(_Capa, 240),
+			        EDATE(_Capa, 300)
+			    )
+		formatString: Short Date
+		lineageTag: 0890d7a7-f453-41fa-bc2c-f4f69e9b6720
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: bc38d174-063e-44f8-b873-b42b89370f4e
+			defaultHierarchy: LocalDateTable_aafd79ed-fee4-4a88-9822-607fa0f2414b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ADI
+		dataType: string
+		lineageTag: ca729bdc-e08e-43b6-b5b3-6811b9c6a449
+		summarizeBy: none
+		sourceColumn: ADI
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Psiko+Kurs = m
+		mode: import
+		source =
+				let
+				    Source = Table.Combine({#"Psiko Havuz", #"Psiko İçin"})
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
