@@ -4,7 +4,7 @@
 |---|---|
 | **Business impact** | Prioritizes upcoming psychotechnical renewals and prevents duplicate calls through a self-updating contact pool. |
 | **Tools** | Power BI, Power Query, DAX |
-| **Status** | In operational use; manually refreshed; scheduled M365 refresh planned. |
+| **Status** | In operational use; fully automated via M365 scheduled cloud refresh. |
 
 
 **TL;DR:** A Power BI report for a driving school. It tracks when commercial drivers' psychotechnical assessments are due for renewal and turns the ones coming up into a call list. The goal wasn't to discover something new. It was to take work already being done and make it faster, repeatable, and easier to follow.
@@ -45,10 +45,13 @@ Called people also drop off the call list. I didn't write separate code for this
 
 ## Numbers
 
-Of 396 people called from the trainee list, 211 shared their psychotechnical date, meaning they were interested. A little over half. The thing to note is that this isn't the share of people who took the assessment. It's the share who were interested when we called. So it measures the aim of the list, not its outcome: are we calling the right people. Because motorcycle and automobile licences were filtered out, the list is already full of people worth calling.
+Of 1092 people called from the trainee list, 648 shared their psychotechnical date, meaning they were interested. A little over half. The thing to note is that this isn't the share of people who took the assessment. It's the share who were interested when we called. So it measures the aim of the list, not its outcome: are we calling the right people. Because motorcycle and automobile licences were filtered out, the list is already full of people worth calling.
 
 The number of people on the tracking list looks high at first glance. That's the regulatory transition. Because everyone who got their licence before 2021 is anchored to the same date, a one-time backlog built up. That backlog isn't permanent. As the system runs, as calls are made and real dates get written back into the pool, the number comes down on its own. Its size today is the size of the work the transition created.
 
-## Where it stands and what's next
+## Update: Automated Cloud Refresh Pipeline
 
-The system is refreshed by hand right now. The next step is integrating M365 scheduled refresh, so the report updates itself without manual work.
+The manual refresh step has been fully automated:
+* **Cloud Architecture:** Configured end-to-end data ingestion directly from Microsoft 365 (SharePoint/OneDrive) using native OAuth2 cloud connections, completely eliminating the need for an on-premises data gateway.
+* **Dynamic Lead Feedback:** Built cross-table DAX logic (`LOOKUPVALUE` and status switching) that automatically identifies called candidates and flags them as "Called", removing them from the active call queue in real time once updated in the cloud sources.
+* **Hands-off Scheduling:** The semantic model now runs on automated scheduled refresh inside Power BI Service, keeping operational call lists up to date without manual intervention.
