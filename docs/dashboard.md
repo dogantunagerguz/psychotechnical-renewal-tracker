@@ -2,6 +2,8 @@
 
 Four report pages, built in Power BI. Candidate names, numbers, and phone numbers are anonymized. Dates and license classes are real, since the data belongs to the driving school and no external party's data is involved.
 
+These screenshots document the original report. Their figures differ from the synthetic public demo; the reported metric definitions and period limitations are recorded under [Numbers](../README.md#numbers).
+
 ---
 
 ## Candidate Pool Tracker
@@ -14,7 +16,11 @@ The pool: people who've already been called and said they're interested, whether
 
 ![Insights](insights.png)
 
-The overview page. The monthly count shows the same one-time bubble the transition created, tapering as the backlog clears. The contact success rate (53%) measures whether the right people are being called, not whether they eventually complete the assessment. The driver's licence issuance chart gives context on why the volume isn't flat across the year.
+The overview page includes a monthly chart, contact-status distribution, and driver's licence issuance history.
+
+The pie chart labelled "Contact Success Rate" shows **211 interested + 185 not interested = 396 classified records**. Its displayed rate is **211 / 396 = 53.28%**. This measures the share marked interested, not assessment completion or sales conversion.
+
+The README's separate trainee-call summary is **648 / 1,092 = 59.34%**, based on people who shared their psychotechnical date. The screenshot's capture date, reporting window, and filter context are not recorded, and its 396 records have not been confirmed as a subset of those 1,092 trainees. The neighbouring charts' dates do not establish the pie chart's scope. See [Numbers](../README.md#numbers) for both definitions; the two percentages do not establish a trend.
 
 ## Candidate Tracker
 
