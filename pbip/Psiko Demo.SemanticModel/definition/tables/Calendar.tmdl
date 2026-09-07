@@ -55,6 +55,7 @@ table Calendar
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Ay Yıl]
+		sortByColumn: 'Yıl-Ay (Sıralama)'
 
 		annotation SummarizationSetBy = Automatic
 

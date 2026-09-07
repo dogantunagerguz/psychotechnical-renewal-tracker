@@ -23,26 +23,12 @@
                       "Entity": "Calendar"
                     }
                   },
-                  "Property": "Ay"
+                  "Property": "Ay Yıl"
                 }
               },
-              "queryRef": "Calendar.Ay",
-              "nativeQueryRef": "Ay",
-              "active": true
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Calendar"
-                    }
-                  },
-                  "Property": "Yıl"
-                }
-              },
-              "queryRef": "Takvim.Yıl",
-              "nativeQueryRef": "Yıl",
+              "queryRef": "Calendar.Ay Yıl",
+              "nativeQueryRef": "Month Year",
+              "displayName": "Month Year",
               "active": true
             }
           ]
@@ -66,11 +52,29 @@
                 }
               },
               "queryRef": "CountNonNull(Psiko Havuz.ADI)",
-              "nativeQueryRef": "Number Of Customers",
-              "displayName": "Number Of Customers"
+              "nativeQueryRef": "Records",
+              "displayName": "Records"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Calendar"
+                  }
+                },
+                "Property": "Ay Yıl"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -102,7 +106,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Psychotechnic Sales by Month'"
+                  "Value": "'Psychotechnical Records by Month'"
                 }
               }
             }

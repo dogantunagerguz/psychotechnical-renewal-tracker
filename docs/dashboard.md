@@ -18,6 +18,8 @@ The pool: people who've already been called and said they're interested, whether
 
 ![Insights](insights.png)
 
+**Presentation QA:** The downloadable PBIP uses a single **Month Year** axis sorted by the numeric **Year-Month** key in ascending order. Its corrected title is **Psychotechnical Records by Month**. The screenshot above is an earlier export and shows the former non-chronological Month/Year hierarchy.
+
 The overview page includes a monthly chart, contact-status distribution, and driver's licence issuance history.
 
 The pie chart labelled "Contact Success Rate" shows **211 interested + 185 not interested = 396 classified records**. Its displayed rate is **211 / 396 = 53.28%**. This measures the share marked interested, not assessment completion or sales conversion.
