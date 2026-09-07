@@ -4,6 +4,8 @@ Four report pages, built in Power BI. Candidate names, numbers, and phone number
 
 These screenshots document the original report. Their figures differ from the synthetic public demo; the reported metric definitions and period limitations are recorded under [Numbers](../README.md#numbers).
 
+The displayed lists reflect the last successful model refresh. The documented operational deployment uses scheduled Power BI Service refresh; the public demo requires **Refresh** in Power BI Desktop. An open Service report may also need its visuals refreshed to display newly imported results. Date-dependent status columns are recalculated on model refresh. See [refresh behaviour](../README.md#update-automated-cloud-refresh-pipeline).
+
 ---
 
 ## Candidate Pool Tracker
