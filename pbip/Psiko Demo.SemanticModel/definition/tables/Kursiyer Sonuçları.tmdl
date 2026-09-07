@@ -94,7 +94,7 @@ table 'Kursiyer Sonuçları'
 		mode: import
 		source =
 				let
-				    Source = Excel.Workbook(File.Contents("C:\Users\dogan\OneDrive\Masaüstü\Power BI Project\mock\22.06.2026-son2507.xlsx"), null, true),
+				    Source = Excel.Workbook(File.Contents(DemoDataFolder & "/22.06.2026-son2507.xlsx"), null, true),
 				    Export_Sheet = Source{[Item="Export",Kind="Sheet"]}[Data],
 				    #"Promoted Headers" = Table.PromoteHeaders(Export_Sheet, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ADAY NO", Int64.Type}, {"ADI", type text}, {"SOYADI", type text}, {"SERT.VER.TARİHİ", type date}, {"P.TEKNİK ALIŞ TARİHİ", type any}, {"Ay", type text}, {"Yıl", Int64.Type}, {"SERTİFİKA", type text}, {"TELEFON", type text}, {"Sıradaki Test", type date}, {"Durum", type text}}),

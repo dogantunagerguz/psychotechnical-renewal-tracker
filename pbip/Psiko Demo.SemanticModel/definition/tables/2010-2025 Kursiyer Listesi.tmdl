@@ -2,7 +2,7 @@ table '2010-2025 Kursiyer Listesi'
 	lineageTag: 90fb70c0-c3e1-4906-b6e3-97e62a86a18c
 
 	column 'ADAY NO'
-		dataType: string
+		dataType: int64
 		lineageTag: 5ff85896-f7f3-4d15-917a-72042d4fda6f
 		summarizeBy: none
 		sourceColumn: ADAY NO
@@ -130,7 +130,7 @@ table '2010-2025 Kursiyer Listesi'
 		mode: import
 		source =
 				let
-				    Source = Excel.Workbook(File.Contents("C:\Users\dogan\OneDrive\Masaüstü\Power BI Project\mock\2010-2025 TARAMA.xlsx"), null, true),
+				    Source = Excel.Workbook(File.Contents(DemoDataFolder & "/2010-2025 TARAMA.xlsx"), null, true),
 				    Sayfa1_Sheet = Source{[Item="Sayfa1",Kind="Sheet"]}[Data],
 				    #"Promoted Headers" = Table.PromoteHeaders(Sayfa1_Sheet, [PromoteAllScalars=true]),
 				    #"Replaced Value" = Table.ReplaceValue(#"Promoted Headers",null,0,Replacer.ReplaceValue,{"TELEFON"}),

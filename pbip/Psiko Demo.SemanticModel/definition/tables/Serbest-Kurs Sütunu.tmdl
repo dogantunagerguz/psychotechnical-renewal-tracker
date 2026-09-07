@@ -41,8 +41,7 @@ table 'Serbest-Kurs Sütunu'
 		source =
 				{
 				    ("ADAY NO", NAMEOF('2010-2025 Kursiyer Listesi'[ADAY NO]), 0),
-				    ("ADI", NAMEOF('2010-2025 Kursiyer Listesi'[ADI]), 1),
-				    ("SOYADI", NAMEOF('2010-2025 Kursiyer Listesi'[SOYADI]), 2),
+				    ("Candidate", NAMEOF('2010-2025 Kursiyer Listesi'[Candidate]), 1),
 				    ("SERTİFİKA VER.TARİHİ", NAMEOF('2010-2025 Kursiyer Listesi'[SERTİFİKA VER.TARİHİ]), 3),
 				    ("Ay", NAMEOF('Calendar'[Ay]), 4),
 				    ("Yıl", NAMEOF('Calendar'[Yıl]), 5),

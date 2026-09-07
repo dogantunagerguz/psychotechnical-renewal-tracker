@@ -40,7 +40,7 @@ table 'Serbest-Psiko Sütunları'
 		mode: import
 		source =
 				{
-				    ("ADI-SOYADI", NAMEOF('Psiko+Kurs'[ADI-SOYADI]), 0),
+				    ("ADI", NAMEOF('Psiko+Kurs'[ADI]), 0),
 				    ("Durum", NAMEOF('Psiko+Kurs'[Durum]), 1),
 				    ("Kaynak", NAMEOF('Psiko+Kurs'[Kaynak]), 2),
 				    ("TARİH", NAMEOF('Psiko+Kurs'[TARİH]), 3),

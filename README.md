@@ -1,5 +1,8 @@
 # Psychotechnical Renewal Tracker
 
+
+[Run the public demo](#run-the-public-demo) — synthetic sample data, no private files or API key required.
+
 | | |
 |---|---|
 | **Business impact** | Prioritizes upcoming psychotechnical renewals and prevents duplicate calls through a self-updating contact pool. |
@@ -55,3 +58,31 @@ The manual refresh step has been fully automated:
 * **Cloud Architecture:** Configured end-to-end data ingestion directly from Microsoft 365 (SharePoint/OneDrive) using native OAuth2 cloud connections, completely eliminating the need for an on-premises data gateway.
 * **Dynamic Lead Feedback:** Built cross-table DAX logic (`LOOKUPVALUE` and status switching) that automatically identifies called candidates and flags them as "Called", removing them from the active call queue in real time once updated in the cloud sources.
 * **Hands-off Scheduling:** The semantic model now runs on automated scheduled refresh inside Power BI Service, keeping operational call lists up to date without manual intervention.
+
+## Run the public demo
+
+The public demo uses **fully synthetic data**, generated locally without private files, credentials, or API requests. Demo figures are illustrative and do not reproduce the business results below.
+
+1. Download this repository (Code → Download ZIP) and extract it, or clone it.
+2. Install Python 3.10+ and a current Power BI Desktop for Windows with PBIP/TMDL support.
+3. Close the project in Power BI Desktop, then run these commands from the repository folder:
+
+```bash
+python -m pip install -r requirements.txt
+python scripts/setup_demo.py
+```
+
+4. Open `pbip/Psiko Demo.pbip` and select **Refresh**.
+
+The script writes the sample workbooks to `demo-data/` and updates the single `DemoDataFolder` Power Query parameter in the local project. If you move the repository, close Power BI Desktop and run the setup command again. To use another sample-data location, run `python scripts/setup_demo.py --data-dir "path/to/demo-data"`. You can also edit `DemoDataFolder` through **Transform data → Manage Parameters**.
+
+Python can generate the files on Windows, macOS, or Linux; opening the report requires [Power BI Desktop](https://learn.microsoft.com/en-us/power-bi/developer/projects/projects-overview). No Power BI Service workspace or cloud refresh setup is required for this local demo. If a map requests an online map service, the remaining report pages can still be reviewed offline.
+
+The sample is anchored to 2026. It contains invented identities and transactions, with matching keys across related tables. Existing screenshots and operational results describe the original project; their totals will differ from this demo.
+
+Run the automated source-data and relocation checks with:
+
+```bash
+python -m unittest discover -s tests -v
+```
+

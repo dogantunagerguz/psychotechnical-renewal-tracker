@@ -1,6 +1,10 @@
+/// Folder created by scripts/setup_demo.py; configurable in Manage Parameters.
+expression DemoDataFolder = "" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	annotation PBI_ResultType = Text
+
 expression 'Psiko 2025 Havuz' =
 		let
-		    Source = Excel.Workbook(File.Contents("C:\Users\dogan\OneDrive\Masaüstü\Power BI Project\mock\BI-Psiko 2025.xlsx"), null, true),
+		    Source = Excel.Workbook(File.Contents(DemoDataFolder & "/BI-Psiko 2025.xlsx"), null, true),
 		    TEMMUZ_Sheet = Source{[Item="TEMMUZ",Kind="Sheet"]}[Data],
 		    #"Promoted Headers" = Table.PromoteHeaders(TEMMUZ_Sheet, [PromoteAllScalars=true]),
 		    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"TARİH", type date}})
@@ -14,7 +18,7 @@ expression 'Psiko 2025 Havuz' =
 
 expression 'Psiko 2026 Havuz' =
 		let
-		    Source = Excel.Workbook(File.Contents("C:\Users\dogan\OneDrive\Masaüstü\Power BI Project\mock\BI-Psiko 2026.xlsx"), null, true),
+		    Source = Excel.Workbook(File.Contents(DemoDataFolder & "/BI-Psiko 2026.xlsx"), null, true),
 		    #"2026_Sheet" = Source{[Item="2026",Kind="Sheet"]}[Data],
 		    #"Promoted Headers" = Table.PromoteHeaders(#"2026_Sheet", [PromoteAllScalars=true]),
 		    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"TARİH", type date}})

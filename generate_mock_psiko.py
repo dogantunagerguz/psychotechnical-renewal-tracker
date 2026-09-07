@@ -16,23 +16,16 @@ no one. Columns that identify a person but never appear in the report
 (T.C. Kimlik No, Sertifika No) are filled with obvious placeholders so they can
 be deleted afterward without leaving a real value behind.
 
-Set the file paths below, then run:  python generate_mock.py
+Optional original-data tool: run with --input-dir and --out-dir.
+For the standalone synthetic demo, run python scripts/setup_demo.py instead.
 """
 
+import argparse
 import os
+from pathlib import Path
 import random
 
 from openpyxl import Workbook, load_workbook
-
-# ---- File paths (edit these) --------------------------------------------
-
-TRAINEE_PATH  = r"candidates"
-RESULTS_PATH  = r"result"
-POOL_PATHS    = [
-    r"C:psycho-2025",
-    r"psycho-2026",
-]
-OUT_DIR       = r"C:\Users\dogan\OneDrive\Masaüstü\Power BI Project\mock"
 
 SEED = 20260719  # fixed so re-runs produce the same anonymization
 
@@ -157,6 +150,18 @@ def process(path, rng, out_dir):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input-dir", type=Path, required=True,
+                        help="Folder containing the four original workbooks")
+    parser.add_argument("--out-dir", type=Path, required=True)
+    args = parser.parse_args()
+    source_dir = args.input_dir.expanduser().resolve()
+    OUT_DIR = args.out_dir.expanduser().resolve()
+    if source_dir == OUT_DIR:
+        parser.error("Choose an output directory different from the source directory.")
+    TRAINEE_PATH = source_dir / "2010-2025 TARAMA.xlsx"
+    RESULTS_PATH = source_dir / "22.06.2026-son2507.xlsx"
+    POOL_PATHS = [source_dir / "BI-Psiko 2025.xlsx", source_dir / "BI-Psiko 2026.xlsx"]
     rng = random.Random(SEED)
     os.makedirs(OUT_DIR, exist_ok=True)
 

@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["2010-2025 Kursiyer Listesi","Psiko 2025 Havuz","Psiko 2026 Havuz","Psiko Havuz","Kursiyer Sonuçları","Psiko İçin","Psiko+Kurs"]
+annotation PBI_QueryOrder = ["DemoDataFolder","2010-2025 Kursiyer Listesi","Psiko 2025 Havuz","Psiko 2026 Havuz","Psiko Havuz","Kursiyer Sonuçları","Psiko İçin","Psiko+Kurs"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
