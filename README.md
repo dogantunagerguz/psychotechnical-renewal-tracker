@@ -76,6 +76,10 @@ The public model's calculated renewal dates and statuses use `TODAY()` and are r
 
 Cloud connections, credentials, refresh schedules, and refresh history belong to the private Service deployment. The downloadable project demonstrates local Import-mode behaviour; it does not configure that cloud deployment or establish its refresh frequency or latency.
 
+## SQL evidence
+
+The [self-contained SQLite companion](sql/README.md) demonstrates the two-regime renewal anchor, five-year cycles, prioritized call queue, contact denominator, source-tagged pool, and data-quality controls on invented records. Run `python sql/run_demo.py`; the repository's unit-test command also verifies it. Its synthetic KPI remains separate from the two published summaries with undocumented cohort and date relationships.
+
 ## Run the public demo
 
 The public demo uses **fully synthetic data**, generated locally without private files, credentials, or API requests. Demo figures are illustrative and do not reproduce the [reported business results](#numbers).
