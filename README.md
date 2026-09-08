@@ -78,8 +78,7 @@ Cloud connections, credentials, refresh schedules, and refresh history belong to
 
 ## SQL evidence
 
-The [self-contained SQLite companion](sql/README.md) demonstrates the two-regime renewal anchor, five-year cycles, prioritized call queue, contact denominator, source-tagged pool, and data-quality controls on invented records. Run `python sql/run_demo.py`; the repository's unit-test command also verifies it. Its synthetic KPI remains separate from the two published summaries with undocumented cohort and date relationships.
-
+The [source-linked SQL companion](sql/README.md) loads the same fully synthetic Power BI inputs: **36 trainee rows, 36 call-result rows, and 24 external-pool rows**. It implements raw, staging, renewal, call-queue, pool, and validation layers at a fixed **2026-09-08** as-of date. Four future-dated external demo rows are retained in raw data but excluded from the as-of mart, and self-reported assessment dates are not mislabelled as pool-added dates. See [executed results](sql/RESULTS.md) and the [data dictionary](sql/DATA_DICTIONARY.md). The two published contact summaries remain separate because their cohort and period relationship is undocumented.
 ## Run the public demo
 
 The public demo uses **fully synthetic data**, generated locally without private files, credentials, or API requests. Demo figures are illustrative and do not reproduce the [reported business results](#numbers).
