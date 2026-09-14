@@ -1,5 +1,8 @@
 # Psychotechnical Renewal Tracker
 
+![Power BI candidate pool dashboard showing renewal priorities and upcoming assessment dates](assets/dashboard-preview.png)
+
+*Candidate Pool Tracker — anonymized dashboard preview. [View all dashboard pages](docs/dashboard.md).*
 
 [Run the public demo](#run-the-public-demo) — synthetic sample data, no private files or API key required.
 
