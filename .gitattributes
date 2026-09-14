@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Include SQL companion queries in repository language statistics.
+*.sql linguist-detectable=true
+*.sql linguist-documentation=false
