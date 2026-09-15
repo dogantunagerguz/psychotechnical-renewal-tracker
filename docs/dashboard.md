@@ -16,13 +16,20 @@ The pool: people who've already been called and said they're interested, whether
 
 ## Insights
 
-![Insights](insights.png)
-
-**Presentation QA:** The downloadable PBIP uses a single **Month Year** axis sorted by the numeric **Year-Month** key in ascending order. Its corrected title is **Psychotechnical Records by Month**. The screenshot above is an earlier export and shows the former non-chronological Month/Year hierarchy.
-
 The overview page includes a monthly chart, contact-status distribution, and driver's licence issuance history.
 
-The pie chart labelled "Contact Success Rate" shows **211 interested + 185 not interested = 396 classified records**. Its displayed rate is **211 / 396 = 53.28%**. This measures the share marked interested, not assessment completion or sales conversion.
+**Current model:** **Psychotechnical Records by Month** uses a single **Month Year** axis sorted by the numeric **Year-Month** key in ascending order. The chart counts records. [View the current visual definition](../pbip/Psiko%20Demo.Report/definition/pages/af596b422431215ab167/visuals/4b4a643a8d94cd097293/visual.json).
+
+<details>
+<summary>View earlier Power BI export</summary>
+
+![Insights — earlier Power BI export](insights.png)
+
+This image predates the chronological axis and corrected chart title. It is retained as an earlier report preview; a fresh export of the current model is pending.
+
+</details>
+
+In the earlier export, the pie chart labelled "Contact Success Rate" shows **211 interested + 185 not interested = 396 classified records**. Its displayed rate is **211 / 396 = 53.28%**. This measures the share marked interested, not assessment completion or sales conversion.
 
 The full story's separate trainee-call summary is **648 / 1,092 = 59.34%**, based on people who shared their psychotechnical date. The screenshot's capture date, reporting window, and filter context are not recorded, and its 396 records have not been confirmed as a subset of those 1,092 trainees. The neighbouring charts' dates do not establish the pie chart's scope. See [Numbers](story.md#numbers) for both definitions; the two percentages do not establish a trend.
 
