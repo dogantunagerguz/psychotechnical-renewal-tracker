@@ -51,6 +51,12 @@ The operational call list uses a status filter to exclude people whose call outc
 
 ![Flow of called candidates: trainee list and externally sourced people feed the pool, and the pool leads to an appointment](psychotechnical_called_candidates_flow.png)
 
+## Operational delivery notes
+
+This project formed part of a wider BI engagement covering driver training, psychotechnical assessment and travel services. The [shared author-reported engagement notes](https://github.com/dogantunagerguz/driving-school-targeting-and-finance/blob/main/docs/story.md#operational-delivery-notes) record the overall **7-to-2-hour weekly reporting reduction**, requirements gathering with **four department managers**, and report publishing across **three business lines**.
+
+Those figures describe the wider engagement, not the effect or stakeholder count of this project alone. Their scope and evidence limitations are documented in the linked notes.
+
 ## Numbers
 
 Two published summaries appear in this repository. They use different denominators, and the available records do not establish a common reporting period or filter context.
