@@ -2,7 +2,11 @@
 
 > Generated from the same fully synthetic Excel workbooks used by the public Power BI demo. These are portfolio-demo outputs, not private or operational results.
 
-**As-of date:** 2026-09-08; legal anchor 2021-06-30; five-year renewal cycles. Four future-dated external demo rows are retained in raw data but excluded from as-of marts.
+**As-of date:** 2026-09-08; project date anchor 2021-06-30; five-year renewal cycles. Four future-dated external demo rows are retained in raw data but excluded from as-of marts.
+
+**Quality policy:** missing/invalid identities, contact references and dates are retained in raw and excluded from actionable outputs. Only valid Interested + Not interested records form the called denominator; quality errors and identity exclusions are reported separately.
+
+**Reload policy:** atomic full-snapshot replacement; regression tests reload the same connection, apply a changed snapshot, and check rollback after a late read failure. This is not incremental loading or CDC.
 
 **Scope note:** the synthetic contact KPI below does not reproduce or reconcile the reported 648 / 1,092 summary with the screenshot's 211 / 396 result. Their cohort, date and filter relationship remains undocumented.
 
@@ -33,9 +37,9 @@
 
 ## Synthetic contact KPI
 
-| eligible_trainees | called_trainees | interested | not_interested | interest_rate_among_called_pct |
-|---|---|---|---|---|
-| 36 | 24 | 12 | 12 | 50.0 |
+| eligible_trainees | called_trainees | interested | not_interested | interest_rate_among_called_pct | not_called_trainees | quality_error_trainees | excluded_identity_rows |
+|---|---|---|---|---|---|---|---|
+| 36 | 24 | 12 | 12 | 50.0 | 12 | 0 | 0 |
 
 ## Unified-pool sources
 
@@ -67,9 +71,23 @@
 | called_candidate_still_in_queue | 0 |
 | commercial_trainee_without_schedule | 0 |
 | contact_denominator_not_reconciled | 0 |
+| contact_population_not_reconciled | 0 |
 | due_date_outside_four_month_lookback | 0 |
 | duplicate_result_candidate | 0 |
 | duplicate_trainee_id | 0 |
 | external_pool_duplicate_key | 0 |
+| external_pool_row_quality_error | 0 |
+| invalid_external_pool_id | 0 |
+| invalid_or_future_assessment_date | 0 |
+| invalid_result_id | 0 |
+| invalid_trainee_id | 0 |
+| missing_external_contact_reference | 0 |
+| missing_result_contact_reference | 0 |
+| missing_trainee_contact_reference | 0 |
+| quality_error_candidate_still_in_queue | 0 |
+| result_row_quality_error | 0 |
+| result_trainee_source_mismatch | 0 |
 | result_without_trainee | 0 |
+| trainee_row_quality_error | 0 |
+| trainee_without_result | 0 |
 | unified_pool_not_reconciled | 0 |

@@ -6,7 +6,7 @@ commercial_trainees AS (
     SELECT t.*, p.as_of_date, p.legal_cutoff
     FROM stg_trainees AS t
     CROSS JOIN parameters AS p
-    WHERE t.licence_class IN ('C', 'D', 'E')
+    WHERE t.is_valid = 1
 ),
 anchors AS (
     SELECT
@@ -57,10 +57,35 @@ SELECT
     END AS renewal_status
 FROM with_month_difference;
 
+-- Keep missing/ambiguous results visible instead of dropping trainees in a join.
+CREATE VIEW contact_population AS
+WITH outcome_counts AS (
+    SELECT candidate_id, COUNT(*) AS result_count,
+           MAX(contact_status) AS contact_status,
+           MAX(assessment_date) AS assessment_date,
+           MAX(licence_class) AS licence_class,
+           MAX(certificate_issue_date) AS certificate_issue_date
+    FROM stg_call_outcomes
+    WHERE candidate_id IS NOT NULL
+    GROUP BY candidate_id
+)
+SELECT t.candidate_id, t.candidate_name, t.phone_ref, o.assessment_date,
+       COALESCE(o.result_count, 0) AS result_count,
+       CASE WHEN t.is_valid = 0 OR COALESCE(o.result_count, 0) <> 1
+                      OR o.licence_class <> t.licence_class
+                      OR o.certificate_issue_date <> t.licence_issue_date
+                 THEN 'Quality error'
+            ELSE o.contact_status END AS contact_status
+FROM stg_trainees AS t
+LEFT JOIN outcome_counts AS o USING (candidate_id)
+WHERE t.candidate_id IS NOT NULL AND t.key_count = 1
+  AND t.licence_class IN ('C', 'D', 'E');
+
 CREATE VIEW call_queue_2026 AS
 SELECT
     r.candidate_id,
     r.candidate_name,
+    o.phone_ref,
     r.licence_class,
     r.next_test_date,
     r.months_to_due,
@@ -72,54 +97,54 @@ SELECT
         ELSE 4
     END AS priority_order
 FROM renewal_priority_2026 AS r
-JOIN stg_call_outcomes AS o USING (candidate_id)
+JOIN contact_population AS o USING (candidate_id)
 WHERE r.renewal_status IN ('Overdue', 'Due now', 'Upcoming')
   AND o.contact_status = 'Not called';
 
 CREATE VIEW contact_outcome_kpis AS
-WITH population AS (
-    SELECT o.*
-    FROM stg_call_outcomes AS o
-    JOIN stg_trainees AS t USING (candidate_id)
-    WHERE t.licence_class IN ('C', 'D', 'E')
-)
 SELECT
     COUNT(*) AS eligible_trainees,
-    SUM(CASE WHEN contact_status <> 'Not called' THEN 1 ELSE 0 END) AS called_trainees,
-    SUM(CASE WHEN contact_status = 'Interested' THEN 1 ELSE 0 END) AS interested,
-    SUM(CASE WHEN contact_status = 'Not interested' THEN 1 ELSE 0 END) AS not_interested,
+    COUNT(CASE WHEN contact_status IN ('Interested', 'Not interested') THEN 1 END) AS called_trainees,
+    COUNT(CASE WHEN contact_status = 'Interested' THEN 1 END) AS interested,
+    COUNT(CASE WHEN contact_status = 'Not interested' THEN 1 END) AS not_interested,
     ROUND(
-        100.0 * SUM(CASE WHEN contact_status = 'Interested' THEN 1 ELSE 0 END)
-        / NULLIF(SUM(CASE WHEN contact_status <> 'Not called' THEN 1 ELSE 0 END), 0),
+        100.0 * COUNT(CASE WHEN contact_status = 'Interested' THEN 1 END)
+        / NULLIF(COUNT(CASE WHEN contact_status IN ('Interested', 'Not interested') THEN 1 END), 0),
         2
-    ) AS interest_rate_among_called_pct
-FROM population;
+    ) AS interest_rate_among_called_pct,
+    COUNT(CASE WHEN contact_status = 'Not called' THEN 1 END) AS not_called_trainees,
+    COUNT(CASE WHEN contact_status = 'Quality error' THEN 1 END) AS quality_error_trainees,
+    (SELECT COUNT(*) FROM stg_trainees WHERE candidate_id IS NULL OR key_count <> 1)
+        AS excluded_identity_rows
+FROM contact_population;
 
 CREATE VIEW unified_contact_pool AS
 SELECT
     'TRAINEE-' || CAST(candidate_id AS TEXT) AS pool_key,
     candidate_name,
+    phone_ref,
     'Interested trainee' AS source,
     assessment_date AS reference_date,
     'Self-reported assessment date; not pool-added date' AS date_meaning
-FROM stg_call_outcomes
+FROM contact_population
 WHERE contact_status = 'Interested'
 UNION ALL
 SELECT
-    'EXTERNAL-' || CAST(pool_id AS TEXT),
+    'EXTERNAL-' || source_workbook || '-' || CAST(pool_id AS TEXT),
     customer_name,
+    phone_ref,
     'External',
     source_date,
     'External source-record date'
 FROM stg_external_pool
-WHERE source_date <= date('2026-09-08');
+WHERE is_valid = 1 AND source_date <= date('2026-09-08');
 
 CREATE VIEW external_pool_monthly_trend AS
 SELECT
     strftime('%Y-%m', source_date) AS source_month,
     COUNT(*) AS records_added
 FROM stg_external_pool
-WHERE source_date <= date('2026-09-08')
+WHERE is_valid = 1 AND source_date <= date('2026-09-08')
 GROUP BY strftime('%Y-%m', source_date);
 
 CREATE VIEW pipeline_reconciliation AS
@@ -127,7 +152,7 @@ SELECT
     (SELECT COUNT(*) FROM raw_trainees) AS trainee_rows,
     (SELECT COUNT(*) FROM raw_call_results) AS result_rows,
     (SELECT COUNT(*) FROM raw_external_pool) AS external_pool_rows,
-    (SELECT COUNT(*) FROM stg_external_pool WHERE source_date <= date('2026-09-08'))
+    (SELECT COUNT(*) FROM stg_external_pool WHERE is_valid = 1 AND source_date <= date('2026-09-08'))
         AS external_pool_rows_as_of,
     (SELECT COUNT(*) FROM stg_external_pool WHERE source_date > date('2026-09-08'))
         AS future_external_rows_excluded,

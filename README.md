@@ -1,14 +1,21 @@
 # Psychotechnical Renewal Tracker
 
+**Business question:** How can staff reach customers near their renewal date, choose whom to contact next, and use recorded outcomes to guide follow-up?
+
 ![Dashboard](assets/dashboard.png)
 
-**What it does:** Tracks commercial drivers' five-year psychotechnical renewals and turns upcoming dates into prioritized call lists and a contact pool.  
+I translated the project's renewal-date rules into manageable outreach groups, narrowed the overdue window to avoid an unworkable backlog, and combined source-tagged records into a shared contact pool. Staff record call outcomes in the source; after a successful operational refresh, called records leave the uncalled list and interested contacts remain available for follow-up.
+
+**Operational use:** Review the priority group, contact the customer, record the outcome, and use the refreshed list for the next round. Staff arrange appointments; the report supports their decisions.
+
 **Tools:** Power BI · DAX · Power Query · Python · SQLite  
 **Status:** Operational use with scheduled M365/Power BI Service refresh; local public demo refreshes manually; operational source data is private.
 
-[▶ Run the public demo](#run-the-public-demo) · [SQL companion](sql/) · [Full story](docs/story.md)
+[Decision workflow and evidence](docs/decision-workflow.md) · [▶ Run the public demo](#run-the-public-demo) · [SQL companion](sql/) · [Full story](docs/story.md)
 
 [View all dashboard pages](docs/dashboard.md)
+
+The workflow documents the date assumptions, KPI denominators, current limitations and proposed operating agreement. Reported expressions of interest are separate from completed renewals. Python and SQL support the synthetic public companion; the operational solution uses Power BI.
 
 ## Run the public demo
 
@@ -40,6 +47,8 @@ python -m unittest discover -s tests -v
 ## SQL evidence
 
 The [SQL companion README](sql/README.md) explains the synthetic source-to-mart pipeline, renewal logic, call queue and data-quality controls. Python and SQLite support this public portfolio companion; SQL is not presented as part of the original production workflow.
+
+The companion preserves raw values for diagnostics, separates invalid dates and identifiers from usable records, excludes records without contact references from the action list, and replaces each workbook snapshot atomically. Regression tests cover repeated loads and changed source snapshots, alongside the clean sample's results.
 
 ```bash
 python sql/run_demo.py

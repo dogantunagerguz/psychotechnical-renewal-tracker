@@ -1,7 +1,9 @@
 -- Raw landing tables mirror the four public Power BI demo workbooks.
+-- Identity columns intentionally have no coercing type affinity: malformed and
+-- text IDs remain inspectable instead of being silently cast to valid integers.
 
 CREATE TABLE raw_trainees (
-    candidate_id       INTEGER,
+    candidate_id,
     licence_class      TEXT,
     certificate_serial TEXT,
     licence_issue_date TEXT,
@@ -11,7 +13,7 @@ CREATE TABLE raw_trainees (
 );
 
 CREATE TABLE raw_call_results (
-    candidate_id                 INTEGER,
+    candidate_id,
     first_name                   TEXT,
     last_name                    TEXT,
     certificate_issue_date       TEXT,
@@ -25,10 +27,9 @@ CREATE TABLE raw_call_results (
 );
 
 CREATE TABLE raw_external_pool (
-    pool_id         INTEGER,
+    pool_id,
     customer_name   TEXT,
     source_date     TEXT,
     phone_ref       TEXT,
     source_workbook TEXT
 );
-

@@ -18,6 +18,18 @@ SQL_FILES = [
     "03_marts.sql",
     "04_quality_checks.sql",
 ]
+WORKBOOK_COLUMNS = {
+    "2010-2025 TARAMA.xlsx": {
+        "ADAY NO", "SERTİFİKA", "SERTİFİKA SERİ NO", "SERTİFİKA VER.TARİHİ",
+        "TELEFON", "Candidate", "İKİNCİ/DİREK.",
+    },
+    "22.06.2026-son2507.xlsx": {
+        "ADAY NO", "ADI", "SOYADI", "SERT.VER.TARİHİ", "P.TEKNİK ALIŞ TARİHİ",
+        "Ay", "Yıl", "SERTİFİKA", "TELEFON", "Sıradaki Test", "Durum",
+    },
+    "BI-Psiko 2025.xlsx": {"SN", "Customer", "TARİH", "TELEFON"},
+    "BI-Psiko 2026.xlsx": {"SN", "Customer", "TARİH", "TELEFON"},
+}
 REPORTS = [
     ("Pipeline reconciliation", "SELECT * FROM pipeline_reconciliation"),
     ("Renewal-status distribution", """
@@ -58,11 +70,17 @@ def load_setup_module():
 
 
 def rows_from_workbook(path):
-    workbook = load_workbook(path, data_only=True, read_only=True)
+    # Keep formula text: an uncached formula must not turn into a NULL assessment
+    # and be mistaken for an explicitly Not called record.
+    workbook = load_workbook(path, data_only=False, read_only=True)
     try:
         worksheet = workbook.active
         values = worksheet.iter_rows(values_only=True)
-        headers = next(values)
+        headers = next(values, ())
+        required = WORKBOOK_COLUMNS[path.name]
+        if (not headers or any(not isinstance(header, str) or not header.strip() for header in headers)
+                or len(headers) != len(set(headers)) or not required <= set(headers)):
+            raise ValueError(f"Invalid or ambiguous workbook headers: {path.name}")
         return [dict(zip(headers, row)) for row in values]
     finally:
         workbook.close()
@@ -76,7 +94,7 @@ def iso_date(value):
     return value
 
 
-def load_workbooks(connection, folder):
+def _insert_workbooks(connection, folder):
     trainees = rows_from_workbook(folder / "2010-2025 TARAMA.xlsx")
     connection.executemany(
         "INSERT INTO raw_trainees VALUES (?, ?, ?, ?, ?, ?, ?)",
@@ -105,6 +123,27 @@ def load_workbooks(connection, folder):
                 row["SN"], row["Customer"], iso_date(row["TARİH"]), row["TELEFON"], filename
             ) for row in pool],
         )
+
+
+def load_workbooks(connection, folder):
+    """Atomically replace the full workbook snapshot on this connection.
+
+    A savepoint also works inside a caller-owned transaction. Read/schema errors
+    roll back every source table. Invalid cell values are retained in raw for
+    diagnosis and quarantined by SQL; quality checks prevent a successful run.
+    This is full replacement, not an incremental load or change-data capture.
+    """
+    connection.execute("SAVEPOINT replace_workbook_snapshot")
+    try:
+        for table in ("raw_trainees", "raw_call_results", "raw_external_pool"):
+            connection.execute(f"DELETE FROM {table}")
+        _insert_workbooks(connection, folder)
+    except Exception:
+        connection.execute("ROLLBACK TO SAVEPOINT replace_workbook_snapshot")
+        connection.execute("RELEASE SAVEPOINT replace_workbook_snapshot")
+        raise
+    else:
+        connection.execute("RELEASE SAVEPOINT replace_workbook_snapshot")
 
 
 def build_connection():
@@ -137,7 +176,11 @@ def render_results(connection):
         "",
         "> Generated from the same fully synthetic Excel workbooks used by the public Power BI demo. These are portfolio-demo outputs, not private or operational results.",
         "",
-        "**As-of date:** 2026-09-08; legal anchor 2021-06-30; five-year renewal cycles. Four future-dated external demo rows are retained in raw data but excluded from as-of marts.",
+        "**As-of date:** 2026-09-08; project date anchor 2021-06-30; five-year renewal cycles. Four future-dated external demo rows are retained in raw data but excluded from as-of marts.",
+        "",
+        "**Quality policy:** missing/invalid identities, contact references and dates are retained in raw and excluded from actionable outputs. Only valid Interested + Not interested records form the called denominator; quality errors and identity exclusions are reported separately.",
+        "",
+        "**Reload policy:** atomic full-snapshot replacement; regression tests reload the same connection, apply a changed snapshot, and check rollback after a late read failure. This is not incremental loading or CDC.",
         "",
         "**Scope note:** the synthetic contact KPI below does not reproduce or reconcile the reported 648 / 1,092 summary with the screenshot's 211 / 396 result. Their cohort, date and filter relationship remains undocumented.",
     ]
