@@ -53,7 +53,7 @@ The operational call list uses a status filter to exclude people whose call outc
 
 ## Operational delivery notes
 
-This project formed part of a wider BI engagement covering driver training, psychotechnical assessment and travel services. The [shared author-reported engagement notes](https://github.com/dogantunagerguz/driving-school-targeting-and-finance/blob/main/docs/story.md#operational-delivery-notes) record the overall **7-to-2-hour weekly reporting reduction**, requirements gathering with **four department managers**, and report publishing across **three business lines**.
+This project formed part of a wider BI engagement covering driver training, psychotechnical assessment and travel services. The [shared author-reported engagement notes](https://github.com/dogantunagerguz/driving-school-targeting-and-finance/blob/main/docs/story.md#operational-delivery-notes) record the overall **7-to-2-hour weekly reporting reduction**, requirements gathering with **three department managers**, and report publishing across **three business lines**.
 
 Those figures describe the wider engagement, not the effect or stakeholder count of this project alone. Their scope and evidence limitations are documented in the linked notes.
 
